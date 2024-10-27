@@ -166,7 +166,7 @@ const CalculatorPage = () => {
                   <h4 className="font-medium text-gray-800 mb-2">
                     Total Sets Required
                   </h4>
-                  <p className="text-base font-medium text-[hsl(152,57%,50%)]">
+                  <p className="text-sm font-medium text-[hsl(152,57%,50%)]">
                     {result.setsNeeded} sets
                   </p>
                 </div>
