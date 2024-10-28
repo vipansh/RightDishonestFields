@@ -1,28 +1,37 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Calculator from "./pages/Calculator";
-import Footer from "./components/Footer";
-
 import NotFound from "./pages/NotFound";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+      },
+      {
+        path: "calculator",
+        element: <Calculator />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+]);
+
 function App() {
-  return (
-    <Router>
-      <div className="flex flex-col h-screen bg-gray-50">
-        <Header />
-        <main className="flex-grow mb-16 md:mb-0">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/calculator" element={<Calculator />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
-  );
+  return <RouterProvider router={router} />;
 }
+
 export default App;

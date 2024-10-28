@@ -10,7 +10,7 @@ const MIN_FINAL = 75;
 const MAX_FINAL = 25000;
 const STEP = 25;
 
-const CalculatorPage = () => {
+const Calculator = () => {
   const [formData, setFormData] = useState({
     initialCapacity: '',
     finalCapacity: '',
@@ -179,4 +179,4 @@ const CalculatorPage = () => {
   );
 };
 
-export default CalculatorPage;
+export default Calculator;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
     return (
         <footer className="relative z-[90] mt-auto">
             <div className="bg-[hsl(152,65%,55%)] py-2">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 
-const ProductsPage = () => {
+const Products = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgurLink = "https://res.cloudinary.com/diaxg9ypf/image/upload/v1729916700/products.png";
 
@@ -49,4 +49,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default Products;
