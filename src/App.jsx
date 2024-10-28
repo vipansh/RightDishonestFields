@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import Calculator from "./pages/Calculator";
+import BarnSizeCalculator from "./pages/BarnSizeCalculator";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "calculator",
-        element: <Calculator />,
+        path: "barnsizecalculator",
+        element: <BarnSizeCalculator />,
       },
       {
         path: "*",
