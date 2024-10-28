@@ -90,7 +90,7 @@ const Calculator = () => {
         </div>
 
         <Card className="w-full max-w-lg mx-auto">
-          <CardContent>
+          <CardContent className="p-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <label htmlFor="initialCapacity" className="text-sm font-medium">

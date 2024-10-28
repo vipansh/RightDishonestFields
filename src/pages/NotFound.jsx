@@ -8,7 +8,7 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-b from-gray-50 to-gray-100">
+    <section className="min-h-screen flex items-center justify-center p-4">
       <Card className="w-full max-w-lg">
         <CardContent className="p-6">
           <div className="text-center space-y-6">
