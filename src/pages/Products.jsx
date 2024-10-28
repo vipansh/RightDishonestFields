@@ -18,7 +18,7 @@ const Products = () => {
         </div>
 
         <Card className="w-full">
-          <CardContent>
+          <CardContent className="p-6">
             <div className="relative w-full">
               <div className={`
                 transition-opacity duration-300 
