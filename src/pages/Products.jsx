@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Loader2 } from 'lucide-react';
+import { UpdateIcon } from '@radix-ui/react-icons';
 
 const Products = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -29,14 +29,12 @@ const Products = () => {
                   onLoad={() => setImageLoaded(true)}
                 />
               </div>
-
               {!imageLoaded && (
                 <div className="absolute inset-0 flex items-center justify-center bg-muted rounded-lg">
-                  <Loader2 className="w-8 h-8 animate-spin text-primary" />
+                  <UpdateIcon className="w-8 h-8 animate-spin text-primary" />
                 </div>
               )}
             </div>
-
             <div className="text-center">
               <p className="text-sm text-muted-foreground">
                 This comprehensive image shows all available products in Hay Day and their unlock levels.

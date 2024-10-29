@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Home, ArrowLeft } from 'lucide-react';
+import { HomeIcon, ArrowLeftIcon } from '@radix-ui/react-icons';
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -25,7 +25,6 @@ const NotFound = () => {
                 </span>
               </div>
             </div>
-
             {/* Error Message */}
             <div className="space-y-3">
               <CardTitle className="text-4xl">Oops! Field Not Found</CardTitle>
@@ -33,7 +32,6 @@ const NotFound = () => {
                 Looks like you've wandered into an uncharted field! Don't worry, even the best farmers take a wrong turn sometimes.
               </CardDescription>
             </div>
-
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -41,18 +39,17 @@ const NotFound = () => {
                 variant="outline"
                 className="flex items-center gap-2"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowLeftIcon className="w-4 h-4" />
                 Go Back
               </Button>
               <Button 
                 onClick={() => navigate('/')}
                 className="flex items-center gap-2"
               >
-                <Home className="w-4 h-4" />
+                <HomeIcon className="w-4 h-4" />
                 Return Home
               </Button>
             </div>
-
             {/* Fun Farm Facts */}
             <div className="p-4 bg-muted rounded-lg">
               <h3 className="text-sm font-medium mb-2">
@@ -66,7 +63,6 @@ const NotFound = () => {
           </div>
         </CardContent>
       </Card>
-
       <style jsx>{`
         @keyframes bounce-slow {
           0%, 100% { transform: translateY(0); }
