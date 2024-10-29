@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription } from '@/components/ui/alert';
@@ -80,17 +80,14 @@ const Calculator = () => {
   return (
     <section className="py-8 px-4 md:px-6">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Storage Calculator
-          </h2>
-          <p className="text-sm text-gray-600">
-            Barn & Silo Upgrade Calculator
-          </p>
-        </div>
-
-        <Card className="w-full max-w-lg mx-auto">
-          <CardContent className="p-6">
+        <Card className="w-full">
+          <CardHeader>
+            <CardTitle className="text-2xl text-center">Storage Calculator</CardTitle>
+            <CardDescription className="text-center">
+              Barn & Silo Upgrade Calculator
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <label htmlFor="initialCapacity" className="text-sm font-medium">
@@ -134,39 +131,39 @@ const Calculator = () => {
             </form>
 
             {error && (
-              <Alert variant="destructive" className="mt-6">
+              <Alert variant="destructive">
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
             )}
 
             {result && (
-              <div className="mt-6 space-y-6">
+              <div className="space-y-6">
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="flex flex-col items-center gap-2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
                       <span role="img" aria-label="Bolt">🔩</span>
                     </div>
-                    <span className="text-sm text-gray-600">{result.tools}</span>
+                    <span className="text-sm text-muted-foreground">{result.tools}</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
                       <span role="img" aria-label="Plank">🪵</span>
                     </div>
-                    <span className="text-sm text-gray-600">{result.tools}</span>
+                    <span className="text-sm text-muted-foreground">{result.tools}</span>
                   </div>
                   <div className="flex flex-col items-center gap-2">
-                    <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
                       <span role="img" aria-label="Tape">🧻</span>
                     </div>
-                    <span className="text-sm text-gray-600">{result.tools}</span>
+                    <span className="text-sm text-muted-foreground">{result.tools}</span>
                   </div>
                 </div>
 
-                <div className="pt-4 border-t text-center">
-                  <h4 className="font-medium text-gray-800 mb-2">
+                <div className="pt-4 border-t border-border text-center">
+                  <h4 className="font-medium text-foreground mb-2">
                     Total Sets Required
                   </h4>
-                  <p className="text-sm font-medium text-[hsl(152,57%,50%)]">
+                  <p className="text-sm font-medium text-primary">
                     {result.setsNeeded} sets
                   </p>
                 </div>

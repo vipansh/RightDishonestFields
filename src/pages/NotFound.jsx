@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Home, ArrowLeft } from 'lucide-react';
 
@@ -8,10 +8,10 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="min-h-screen flex items-center justify-center p-4">
+    <section className="min-h-[calc(100vh-8rem)] flex items-center justify-center p-4">
       <Card className="w-full max-w-lg">
-        <CardContent className="p-6">
-          <div className="text-center space-y-6">
+        <CardContent className="p-8">
+          <div className="text-center space-y-8">
             {/* Fun Farm Icon Stack */}
             <div className="relative w-24 h-24 mx-auto">
               <div className="absolute inset-0 animate-bounce-slow">
@@ -27,17 +27,15 @@ const NotFound = () => {
             </div>
 
             {/* Error Message */}
-            <div className="space-y-2">
-              <h1 className="text-4xl font-bold text-gray-900">
-                Oops! Field Not Found
-              </h1>
-              <p className="text-gray-600 max-w-md mx-auto">
+            <div className="space-y-3">
+              <CardTitle className="text-4xl">Oops! Field Not Found</CardTitle>
+              <CardDescription className="text-base max-w-md mx-auto">
                 Looks like you've wandered into an uncharted field! Don't worry, even the best farmers take a wrong turn sometimes.
-              </p>
+              </CardDescription>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 onClick={() => navigate(-1)}
                 variant="outline"
@@ -56,11 +54,11 @@ const NotFound = () => {
             </div>
 
             {/* Fun Farm Facts */}
-            <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-              <h3 className="text-sm font-medium text-gray-900 mb-2">
+            <div className="p-4 bg-muted rounded-lg">
+              <h3 className="text-sm font-medium mb-2">
                 Did you know? 🌾
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-muted-foreground">
                 Just like crops need time to grow, sometimes pages need time to load. 
                 But this one seems to be hibernating in the barn!
               </p>
