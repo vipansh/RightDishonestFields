@@ -4,14 +4,6 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('@/assets/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins';
   src: url('@/assets/fonts/Poppins-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
@@ -89,14 +81,5 @@
   }
   body {
     @apply font-poppins bg-background text-foreground;
-  }
-}
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }
