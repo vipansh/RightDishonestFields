@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
-// Types
 type Theme = "dark" | "light" | "system";
 type NavItem = {
   name: string;
@@ -25,7 +24,6 @@ type NavItem = {
   subItems?: Array<{ name: string; to: string }>;
 };
 
-// Theme Context
 const ThemeContext = createContext<{
   theme: Theme;
   setTheme: (theme: Theme) => void;
@@ -40,7 +38,6 @@ const useTheme = () => {
   return context;
 };
 
-// Navigation Data
 const NAV_ITEMS: NavItem[] = [
   { name: "Home", to: "/" },
   { name: "Products", to: "/products" },
@@ -53,7 +50,6 @@ const NAV_ITEMS: NavItem[] = [
   },
 ];
 
-// Theme Toggle Component
 const ModeToggle = () => {
   const { theme, setTheme } = useTheme();
 
@@ -77,7 +73,6 @@ const ModeToggle = () => {
   );
 };
 
-// Mobile Navigation Item Component
 const MobileNavItem: React.FC<{
   item: NavItem;
   isActive: (to: string) => boolean;
@@ -91,10 +86,8 @@ const MobileNavItem: React.FC<{
         to={item.to!}
         onClick={onSelect}
         className={cn(
-          "block px-6 py-2.5 text-[15px] rounded-md transition-colors",
-          isActive(item.to!) 
-            ? "bg-accent text-accent-foreground font-semibold"
-            : "hover:bg-accent/50"
+          "block px-6 py-2.5 text-[15px] rounded-md transition-colors text-muted-foreground",
+          isActive(item.to!) && "text-foreground"
         )}
       >
         {item.name}
@@ -109,9 +102,8 @@ const MobileNavItem: React.FC<{
         aria-expanded={isExpanded}
         aria-controls={`${item.name}-submenu`}
         className={cn(
-          "flex w-full items-center justify-between py-2.5 px-6 text-[15px] transition-colors hover:bg-accent/50 rounded-md",
-          item.subItems.some(subItem => isActive(subItem.to)) && 
-          "bg-accent text-accent-foreground font-semibold"
+          "flex w-full items-center justify-between py-2.5 px-6 text-[15px] transition-colors rounded-md text-muted-foreground",
+          item.subItems.some(subItem => isActive(subItem.to)) && "text-foreground"
         )}
       >
         <span>{item.name}</span>
@@ -130,10 +122,8 @@ const MobileNavItem: React.FC<{
             to={subItem.to}
             onClick={onSelect}
             className={cn(
-              "block px-6 py-2.5 text-[14px] rounded-md transition-colors",
-              isActive(subItem.to)
-                ? "bg-accent text-accent-foreground font-semibold"
-                : "hover:bg-accent/50"
+              "block px-6 py-2.5 text-[14px] rounded-md transition-colors text-muted-foreground",
+              isActive(subItem.to) && "text-foreground"
             )}
           >
             {subItem.name}
@@ -144,7 +134,6 @@ const MobileNavItem: React.FC<{
   );
 };
 
-// Main Navbar Component
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -152,7 +141,7 @@ const Navbar = () => {
 
   const [theme, setThemeState] = useState<Theme>(() => {
     if (typeof window === 'undefined') return 'system';
-    return (localStorage.getItem("vite-ui-theme") as Theme) || "system";
+    return (localStorage.getItem("themePreference") as Theme) || "system";
   });
 
   const updateTheme = (newTheme: Theme) => {
@@ -172,7 +161,7 @@ const Navbar = () => {
 
   useEffect(() => {
     updateTheme(theme);
-    localStorage.setItem("vite-ui-theme", theme);
+    localStorage.setItem("themePreference", theme);
 
     if (theme === 'system') {
       const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -203,9 +192,9 @@ const Navbar = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-sm border-b transition-colors duration-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between h-14 px-6">
             <Link to="/" className="text-lg font-semibold">
               Dr Hayday
             </Link>
@@ -220,9 +209,8 @@ const Navbar = () => {
                         aria-expanded={activeDropdown === item.name}
                         aria-controls={`${item.name}-dropdown`}
                         className={cn(
-                          "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent inline-flex items-center gap-1",
-                          (item.subItems.some(sub => isLinkActive(sub.to)) || activeDropdown === item.name) && 
-                          "bg-accent text-accent-foreground font-semibold"
+                          "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent inline-flex items-center gap-1 text-muted-foreground",
+                          (item.subItems.some(sub => isLinkActive(sub.to)) || activeDropdown === item.name) && "text-foreground"
                         )}
                       >
                         {item.name}
@@ -243,9 +231,8 @@ const Navbar = () => {
                                 to={subItem.to}
                                 onClick={() => setActiveDropdown(null)}
                                 className={cn(
-                                  "block w-full rounded-md px-2 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground",
-                                  isLinkActive(subItem.to) &&
-                                  "bg-accent text-accent-foreground font-semibold"
+                                  "block w-full rounded-md px-2 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground text-muted-foreground",
+                                  isLinkActive(subItem.to) && "text-foreground"
                                 )}
                               >
                                 {subItem.name}
@@ -260,18 +247,17 @@ const Navbar = () => {
                       key={item.name}
                       to={item.to!}
                       className={cn(
-                        "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent",
-                        isLinkActive(item.to!) && "bg-accent text-accent-foreground font-semibold"
+                        "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent text-muted-foreground",
+                        isLinkActive(item.to!) && "text-foreground"
                       )}
                     >
                       {item.name}
                     </Link>
                   )
                 )}
-              </div>
-
-              <div className="ml-8">
-                <ModeToggle />
+                <div className="pl-4">
+                  <ModeToggle />
+                </div>
               </div>
             </div>
 
@@ -284,7 +270,7 @@ const Navbar = () => {
                     size="icon"
                     aria-label="Open navigation menu"
                   >
-                    <HamburgerMenuIcon className="h-6 w-6" />
+                    <HamburgerMenuIcon className="h-6 w-6 text-muted-foreground" />
                     <span className="sr-only">Menu</span>
                   </Button>
                 </SheetTrigger>
