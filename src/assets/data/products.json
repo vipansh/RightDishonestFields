@@ -1,0 +1,5065 @@
+[
+  {
+    "name": "Wheat",
+    "level": 1,
+    "max_price": 3.6,
+    "time": 2,
+    "xp": 1,
+    "needs": [{ "name": "Wheat", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "50-101"
+  },
+  {
+    "name": "Egg",
+    "level": 1,
+    "max_price": 18.0,
+    "time": 20,
+    "xp": 2,
+    "needs": [{ "name": "Chicken feed", "quantity": 1 }],
+    "source": "Chicken",
+    "per_boat_crate": "15-24"
+  },
+  {
+    "name": "Corn",
+    "level": 2,
+    "max_price": 7.2,
+    "time": 5,
+    "xp": 1,
+    "needs": [{ "name": "Corn", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "50-87"
+  },
+  {
+    "name": "Bread",
+    "level": 2,
+    "max_price": 21.6,
+    "time": 5,
+    "xp": 3,
+    "needs": [{ "name": "Wheat", "quantity": 3 }],
+    "source": "Bakery",
+    "per_boat_crate": "14-26"
+  },
+  {
+    "name": "Chicken feed",
+    "level": 3,
+    "max_price": 7.2,
+    "time": 5,
+    "xp": 1,
+    "needs": [
+      { "name": "Corn", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Soybean",
+    "level": 5,
+    "max_price": 10.8,
+    "time": 20,
+    "xp": 2,
+    "needs": [{ "name": "Soybean", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "24-48"
+  },
+  {
+    "name": "Cow feed",
+    "level": 6,
+    "max_price": 14.4,
+    "time": 10,
+    "xp": 2,
+    "needs": [
+      { "name": "Corn", "quantity": 1 },
+      { "name": "Soybean", "quantity": 2 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Milk",
+    "level": 6,
+    "max_price": 32.4,
+    "time": 60,
+    "xp": 3,
+    "needs": [{ "name": "Cow feed", "quantity": 1 }],
+    "source": "Cow",
+    "per_boat_crate": "8-16"
+  },
+  {
+    "name": "Cream",
+    "level": 6,
+    "max_price": 50.4,
+    "time": 20,
+    "xp": 6,
+    "needs": [{ "name": "Milk", "quantity": 1 }],
+    "source": "Dairy",
+    "per_boat_crate": "8-12"
+  },
+  {
+    "name": "Sugarcane",
+    "level": 7,
+    "max_price": 14.4,
+    "time": 30,
+    "xp": 3,
+    "needs": [{ "name": "Sugarcane", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "14-31"
+  },
+  {
+    "name": "Corn bread",
+    "level": 7,
+    "max_price": 72.0,
+    "time": 30,
+    "xp": 8,
+    "needs": [
+      { "name": "Corn", "quantity": 2 },
+      { "name": "Egg", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "4-8"
+  },
+  {
+    "name": "Brown sugar",
+    "level": 7,
+    "max_price": 32.4,
+    "time": 20,
+    "xp": 4,
+    "needs": [{ "name": "Sugarcane", "quantity": 1 }],
+    "source": "Sugar Mill",
+    "per_boat_crate": "8-13"
+  },
+  {
+    "name": "Popcorn",
+    "level": 8,
+    "max_price": 32.4,
+    "time": 30,
+    "xp": 4,
+    "needs": [{ "name": "Corn", "quantity": 2 }],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "10-19"
+  },
+  {
+    "name": "Carrot",
+    "level": 9,
+    "max_price": 7.2,
+    "time": 10,
+    "xp": 2,
+    "needs": [{ "name": "Carrot", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "30-49"
+  },
+  {
+    "name": "Butter",
+    "level": 9,
+    "max_price": 82.8,
+    "time": 30,
+    "xp": 10,
+    "needs": [{ "name": "Milk", "quantity": 2 }],
+    "source": "Dairy",
+    "per_boat_crate": "4-7"
+  },
+  {
+    "name": "Pancake",
+    "level": 9,
+    "max_price": 108.0,
+    "time": 30,
+    "xp": 13,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Egg", "quantity": 3 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Pig feed",
+    "level": 10,
+    "max_price": 14.4,
+    "time": 20,
+    "xp": 2,
+    "needs": [
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Soybean", "quantity": 1 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Bacon",
+    "level": 10,
+    "max_price": 50.4,
+    "time": 240,
+    "xp": 5,
+    "needs": [{ "name": "Pig feed", "quantity": 1 }],
+    "source": "Pig",
+    "per_boat_crate": "4-9"
+  },
+  {
+    "name": "Cookie",
+    "level": 10,
+    "max_price": 104.4,
+    "time": 60,
+    "xp": 13,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2-5"
+  },
+  {
+    "name": "Bacon and eggs",
+    "level": 11,
+    "max_price": 201.6,
+    "time": 60,
+    "xp": 24,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Egg", "quantity": 4 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Cheese",
+    "level": 12,
+    "max_price": 122.4,
+    "time": 60,
+    "xp": 15,
+    "needs": [{ "name": "Milk", "quantity": 3 }],
+    "source": "Dairy",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Indigo",
+    "level": 13,
+    "max_price": 25.2,
+    "time": 120,
+    "xp": 5,
+    "needs": [{ "name": "Indigo", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "8-19"
+  },
+  {
+    "name": "White sugar",
+    "level": 13,
+    "max_price": 50.4,
+    "time": 40,
+    "xp": 6,
+    "needs": [{ "name": "Sugarcane", "quantity": 2 }],
+    "source": "Sugar Mill",
+    "per_boat_crate": "4-13"
+  },
+  {
+    "name": "Carrot pie",
+    "level": 14,
+    "max_price": 82.8,
+    "time": 60,
+    "xp": 10,
+    "needs": [
+      { "name": "Carrot", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "4-7"
+  },
+  {
+    "name": "Pumpkin",
+    "level": 15,
+    "max_price": 32.4,
+    "time": 180,
+    "xp": 6,
+    "needs": [{ "name": "Pumpkin", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "9-16"
+  },
+  {
+    "name": "Pumpkin pie",
+    "level": 15,
+    "max_price": 158.4,
+    "time": 120,
+    "xp": 19,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Pumpkin", "quantity": 3 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Apple",
+    "level": 15,
+    "max_price": 39.6,
+    "time": 960,
+    "xp": 7,
+    "needs": [],
+    "source": "Apple tree",
+    "per_boat_crate": "8-14"
+  },
+  {
+    "name": "Sheep feed",
+    "level": 16,
+    "max_price": 14.4,
+    "time": 30,
+    "xp": 3,
+    "needs": [
+      { "name": "Soybean", "quantity": 1 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Wool",
+    "level": 16,
+    "max_price": 54.0,
+    "time": 360,
+    "xp": 5,
+    "needs": [{ "name": "Sheep feed", "quantity": 1 }],
+    "source": "Sheep",
+    "per_boat_crate": "5-9"
+  },
+  {
+    "name": "Buttered popcorn",
+    "level": 16,
+    "max_price": 126.0,
+    "time": 60,
+    "xp": 15,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Corn", "quantity": 2 }
+    ],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "2-5"
+  },
+  {
+    "name": "Sweater",
+    "level": 17,
+    "max_price": 151.2,
+    "time": 120,
+    "xp": 18,
+    "needs": [{ "name": "Wool", "quantity": 2 }],
+    "source": "Loom",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Cotton",
+    "level": 18,
+    "max_price": 28.8,
+    "time": 150,
+    "xp": 6,
+    "needs": [{ "name": "Cotton", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "10-16"
+  },
+  {
+    "name": "Bacon pie",
+    "level": 18,
+    "max_price": 219.6,
+    "time": 180,
+    "xp": 26,
+    "needs": [
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Syrup",
+    "level": 18,
+    "max_price": 90.0,
+    "time": 90,
+    "xp": 11,
+    "needs": [{ "name": "Sugarcane", "quantity": 4 }],
+    "source": "Sugar Mill",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Cotton fabric",
+    "level": 18,
+    "max_price": 108.0,
+    "time": 30,
+    "xp": 13,
+    "needs": [{ "name": "Cotton", "quantity": 3 }],
+    "source": "Loom",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Hamburger",
+    "level": 18,
+    "max_price": 180.0,
+    "time": 120,
+    "xp": 22,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Bread", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Raspberry",
+    "level": 19,
+    "max_price": 46.8,
+    "time": 1080,
+    "xp": 9,
+    "needs": [],
+    "source": "Raspberry bush",
+    "per_boat_crate": "6-11"
+  },
+  {
+    "name": "Raspberry muffin",
+    "level": 19,
+    "max_price": 140.4,
+    "time": 45,
+    "xp": 17,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 2 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Blue woolly hat",
+    "level": 19,
+    "max_price": 111.6,
+    "time": 60,
+    "xp": 13,
+    "needs": [
+      { "name": "Indigo", "quantity": 1 },
+      { "name": "Wool", "quantity": 1 }
+    ],
+    "source": "Loom",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Cotton shirt",
+    "level": 19,
+    "max_price": 241.2,
+    "time": 45,
+    "xp": 29,
+    "needs": [{ "name": "Cotton fabric", "quantity": 2 }],
+    "source": "Sewing Machine",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Blue sweater",
+    "level": 20,
+    "max_price": 208.8,
+    "time": 180,
+    "xp": 25,
+    "needs": [
+      { "name": "Indigo", "quantity": 2 },
+      { "name": "Wool", "quantity": 2 }
+    ],
+    "source": "Loom",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Carrot cake",
+    "level": 21,
+    "max_price": 165.6,
+    "time": 90,
+    "xp": 20,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Carrot", "quantity": 2 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Wooly chaps",
+    "level": 21,
+    "max_price": 309.6,
+    "time": 90,
+    "xp": 37,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 1 },
+      { "name": "Wool", "quantity": 3 }
+    ],
+    "source": "Sewing Machine",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Cherry",
+    "level": 22,
+    "max_price": 68.4,
+    "time": 1620,
+    "xp": 13,
+    "needs": [],
+    "source": "Cherry tree",
+    "per_boat_crate": "4-7"
+  },
+  {
+    "name": "Cream cake",
+    "level": 23,
+    "max_price": 219.6,
+    "time": 180,
+    "xp": 26,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Wheat", "quantity": 5 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Red berry cake",
+    "level": 23,
+    "max_price": 255.6,
+    "time": 60,
+    "xp": 31,
+    "needs": [
+      { "name": "Cherry", "quantity": 2 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Cheesecake",
+    "level": 24,
+    "max_price": 284.4,
+    "time": 240,
+    "xp": 34,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Cookie", "quantity": 1 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Silver ore",
+    "level": 24,
+    "max_price": 18.0,
+    "time": 0,
+    "xp": 5,
+    "needs": [],
+    "source": "Mine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Gold ore",
+    "level": 24,
+    "max_price": 21.6,
+    "time": 0,
+    "xp": 6,
+    "needs": [],
+    "source": "Mine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Platinum ore",
+    "level": 24,
+    "max_price": 25.2,
+    "time": 0,
+    "xp": 7,
+    "needs": [],
+    "source": "Mine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Silver bar",
+    "level": 24,
+    "max_price": 147.6,
+    "time": 480,
+    "xp": 18,
+    "needs": [{ "name": "Silver ore", "quantity": 3 }],
+    "source": "Smelter",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Chili pepper",
+    "level": 25,
+    "max_price": 36.0,
+    "time": 240,
+    "xp": 7,
+    "needs": [{ "name": "Chili pepper", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Chili popcorn",
+    "level": 25,
+    "max_price": 122.4,
+    "time": 120,
+    "xp": 15,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Corn", "quantity": 2 }
+    ],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Gold bar",
+    "level": 25,
+    "max_price": 180.0,
+    "time": 720,
+    "xp": 21,
+    "needs": [{ "name": "Gold ore", "quantity": 3 }],
+    "source": "Smelter",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Platinum bar",
+    "level": 25,
+    "max_price": 205.2,
+    "time": 960,
+    "xp": 24,
+    "needs": [{ "name": "Platinum ore", "quantity": 3 }],
+    "source": "Smelter",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Violet dress",
+    "level": 25,
+    "max_price": 327.6,
+    "time": 135,
+    "xp": 39,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 2 },
+      { "name": "Indigo", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 }
+    ],
+    "source": "Sewing Machine",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Blackberry",
+    "level": 26,
+    "max_price": 82.8,
+    "time": 1920,
+    "xp": 16,
+    "needs": [],
+    "source": "Blackberry bush",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Blackberry muffin",
+    "level": 26,
+    "max_price": 226.8,
+    "time": 45,
+    "xp": 27,
+    "needs": [
+      { "name": "Blackberry", "quantity": 2 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Wheat", "quantity": 1 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Carrot juice",
+    "level": 26,
+    "max_price": 46.8,
+    "time": 30,
+    "xp": 6,
+    "needs": [{ "name": "Carrot", "quantity": 3 }],
+    "source": "Juice Press",
+    "per_boat_crate": "6-11"
+  },
+  {
+    "name": "Red lure",
+    "level": 27,
+    "max_price": 0.0,
+    "time": 90,
+    "xp": 1,
+    "needs": [],
+    "source": "Lure Workbench",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Green lure",
+    "level": 27,
+    "max_price": 0.0,
+    "time": 75,
+    "xp": 2,
+    "needs": [{ "name": "Green voucher", "quantity": 1 }],
+    "source": "Lure Workbench",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Blue lure",
+    "level": 27,
+    "max_price": 0.0,
+    "time": 60,
+    "xp": 3,
+    "needs": [{ "name": "Blue voucher", "quantity": 1 }],
+    "source": "Lure Workbench",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Purple lure",
+    "level": 27,
+    "max_price": 0.0,
+    "time": 45,
+    "xp": 4,
+    "needs": [{ "name": "Purple voucher", "quantity": 1 }],
+    "source": "Lure Workbench",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Gold lure",
+    "level": 27,
+    "max_price": 0.0,
+    "time": 30,
+    "xp": 5,
+    "needs": [{ "name": "Gold voucher", "quantity": 1 }],
+    "source": "Lure Workbench",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Fish fillet",
+    "level": 27,
+    "max_price": 54.0,
+    "time": 0,
+    "xp": 4,
+    "needs": [
+      { "name": "Lure", "quantity": 1 },
+      { "name": "or Fishing net", "quantity": 1 }
+    ],
+    "source": "Fish",
+    "per_boat_crate": "6-9"
+  },
+  {
+    "name": "Fish burger",
+    "level": 27,
+    "max_price": 226.8,
+    "time": 120,
+    "xp": 27,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Fish fillet", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Apple pie",
+    "level": 28,
+    "max_price": 270.0,
+    "time": 150,
+    "xp": 32,
+    "needs": [
+      { "name": "Apple", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Syrup", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Fish pie",
+    "level": 28,
+    "max_price": 226.8,
+    "time": 120,
+    "xp": 27,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Fish fillet", "quantity": 3 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Apple juice",
+    "level": 28,
+    "max_price": 129.6,
+    "time": 120,
+    "xp": 15,
+    "needs": [{ "name": "Apple", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "3-7"
+  },
+  {
+    "name": "Vanilla ice cream",
+    "level": 29,
+    "max_price": 172.8,
+    "time": 120,
+    "xp": 20,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Tomato",
+    "level": 30,
+    "max_price": 43.2,
+    "time": 360,
+    "xp": 8,
+    "needs": [{ "name": "Tomato", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "6-12"
+  },
+  {
+    "name": "Roasted tomatoes",
+    "level": 30,
+    "max_price": 118.8,
+    "time": 90,
+    "xp": 14,
+    "needs": [{ "name": "Tomato", "quantity": 2 }],
+    "source": "BBQ Grill",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Cherry juice",
+    "level": 30,
+    "max_price": 216.0,
+    "time": 150,
+    "xp": 26,
+    "needs": [{ "name": "Cherry", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Fishing net",
+    "level": 30,
+    "max_price": 0.0,
+    "time": 240,
+    "xp": 7,
+    "needs": [],
+    "source": "Net Maker",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Mystery net",
+    "level": 30,
+    "max_price": 0.0,
+    "time": 180,
+    "xp": 7,
+    "needs": [{ "name": "Diamond", "quantity": 5 }],
+    "source": "Net Maker",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Tomato juice",
+    "level": 31,
+    "max_price": 162.0,
+    "time": 90,
+    "xp": 19,
+    "needs": [{ "name": "Tomato", "quantity": 3 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Berry juice",
+    "level": 31,
+    "max_price": 205.2,
+    "time": 180,
+    "xp": 24,
+    "needs": [
+      { "name": "Blackberry", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 }
+    ],
+    "source": "Juice Press",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Goat feed",
+    "level": 32,
+    "max_price": 14.4,
+    "time": 40,
+    "xp": 3,
+    "needs": [
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Corn", "quantity": 1 },
+      { "name": "Wheat", "quantity": 1 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Goat milk",
+    "level": 32,
+    "max_price": 64.8,
+    "time": 480,
+    "xp": 6,
+    "needs": [{ "name": "Goat Feed", "quantity": 1 }],
+    "source": "Goat",
+    "per_boat_crate": "5-8"
+  },
+  {
+    "name": "Goat cheese",
+    "level": 33,
+    "max_price": 162.0,
+    "time": 90,
+    "xp": 19,
+    "needs": [{ "name": "Goat milk", "quantity": 2 }],
+    "source": "Dairy",
+    "per_boat_crate": "2-5"
+  },
+  {
+    "name": "Pizza",
+    "level": 33,
+    "max_price": 190.8,
+    "time": 15,
+    "xp": 23,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Tomato", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Coal",
+    "level": 33,
+    "max_price": 10.8,
+    "time": 0,
+    "xp": 3,
+    "needs": [],
+    "source": "Mine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Refined coal",
+    "level": 33,
+    "max_price": 108.0,
+    "time": 360,
+    "xp": 13,
+    "needs": [{ "name": "Coal", "quantity": 3 }],
+    "source": "Smelter",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Cherry popsicle",
+    "level": 33,
+    "max_price": 352.8,
+    "time": 180,
+    "xp": 42,
+    "needs": [
+      { "name": "Cherry juice", "quantity": 1 },
+      { "name": "Syrup", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Strawberry",
+    "level": 34,
+    "max_price": 50.4,
+    "time": 480,
+    "xp": 10,
+    "needs": [{ "name": "Strawberry", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "3-10"
+  },
+  {
+    "name": "Feta pie",
+    "level": 34,
+    "max_price": 223.2,
+    "time": 90,
+    "xp": 26,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Goat cheese", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Iron ore",
+    "level": 34,
+    "max_price": 14.4,
+    "time": 0,
+    "xp": 4,
+    "needs": [],
+    "source": "Mine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Iron bar",
+    "level": 34,
+    "max_price": 129.6,
+    "time": 420,
+    "xp": 15,
+    "needs": [{ "name": "Iron ore", "quantity": 3 }],
+    "source": "Smelter",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Strawberry ice cream",
+    "level": 34,
+    "max_price": 331.2,
+    "time": 240,
+    "xp": 40,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 3 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Wheat bundle",
+    "level": 34,
+    "max_price": 50.4,
+    "time": 90,
+    "xp": 10,
+    "needs": [{ "name": "Wheat", "quantity": 75 }],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Meat bucket",
+    "level": 34,
+    "max_price": 72.0,
+    "time": 45,
+    "xp": 15,
+    "needs": [
+      { "name": "Fish Fillet", "quantity": 3 },
+      { "name": "Carrot", "quantity": 5 }
+    ],
+    "source": "Feed Mill",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Potato",
+    "level": 35,
+    "max_price": 36.0,
+    "time": 220,
+    "xp": 7,
+    "needs": [{ "name": "Potato", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "6-14"
+  },
+  {
+    "name": "Strawberry cake",
+    "level": 35,
+    "max_price": 316.8,
+    "time": 180,
+    "xp": 38,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 2 },
+      { "name": "Wheat", "quantity": 3 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Baked potato",
+    "level": 35,
+    "max_price": 298.8,
+    "time": 35,
+    "xp": 36,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Potato", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Apple jam",
+    "level": 35,
+    "max_price": 219.6,
+    "time": 360,
+    "xp": 26,
+    "needs": [{ "name": "Apple", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Chocolate cake",
+    "level": 36,
+    "max_price": 320.4,
+    "time": 120,
+    "xp": 38,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Casserole",
+    "level": 36,
+    "max_price": 367.2,
+    "time": 120,
+    "xp": 44,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Potato", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Cacao",
+    "level": 36,
+    "max_price": 86.4,
+    "time": 2040,
+    "xp": 16,
+    "needs": [],
+    "source": "Cacao tree ",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Raspberry jam",
+    "level": 36,
+    "max_price": 252.0,
+    "time": 420,
+    "xp": 30,
+    "needs": [{ "name": "Raspberry", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Spicy pizza",
+    "level": 37,
+    "max_price": 226.8,
+    "time": 15,
+    "xp": 27,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Tomato", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Blackberry jam",
+    "level": 37,
+    "max_price": 388.8,
+    "time": 480,
+    "xp": 46,
+    "needs": [{ "name": "Blackberry", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Potato feta cake",
+    "level": 38,
+    "max_price": 309.6,
+    "time": 120,
+    "xp": 37,
+    "needs": [
+      { "name": "Egg", "quantity": 4 },
+      { "name": "Goat cheese", "quantity": 1 },
+      { "name": "Potato", "quantity": 1 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cherry jam",
+    "level": 38,
+    "max_price": 334.8,
+    "time": 420,
+    "xp": 40,
+    "needs": [{ "name": "Cherry", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Bracelet",
+    "level": 38,
+    "max_price": 514.8,
+    "time": 120,
+    "xp": 61,
+    "needs": [
+      { "name": "Gold bar", "quantity": 1 },
+      { "name": "Silver bar", "quantity": 2 }
+    ],
+    "source": "Jeweler",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Potato bread",
+    "level": 39,
+    "max_price": 284.4,
+    "time": 45,
+    "xp": 34,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Egg", "quantity": 3 },
+      { "name": "Potato", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Shepherd's pie",
+    "level": 39,
+    "max_price": 280.8,
+    "time": 100,
+    "xp": 34,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Potato", "quantity": 2 },
+      { "name": "Pumpkin", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Chocolate ice cream",
+    "level": 39,
+    "max_price": 342.0,
+    "time": 150,
+    "xp": 41,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Honeycomb",
+    "level": 39,
+    "max_price": 68.4,
+    "time": 0,
+    "xp": 8,
+    "needs": [],
+    "source": "Beehive tree",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Necklace",
+    "level": 39,
+    "max_price": 727.2,
+    "time": 180,
+    "xp": 87,
+    "needs": [
+      { "name": "Gold bar", "quantity": 1 },
+      { "name": "Platinum bar", "quantity": 1 },
+      { "name": "Silver bar", "quantity": 2 }
+    ],
+    "source": "Jeweler",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Honey",
+    "level": 39,
+    "max_price": 154.8,
+    "time": 20,
+    "xp": 19,
+    "needs": [{ "name": "Honeycomb", "quantity": 2 }],
+    "source": "Honey Extractor",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Honey popcorn",
+    "level": 40,
+    "max_price": 360.0,
+    "time": 90,
+    "xp": 43,
+    "needs": [
+      { "name": "Corn", "quantity": 2 },
+      { "name": "Honey", "quantity": 2 }
+    ],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "3-5"
+  },
+  {
+    "name": "Diamond ring",
+    "level": 40,
+    "max_price": 824.4,
+    "time": 240,
+    "xp": 98,
+    "needs": [
+      { "name": "Diamond", "quantity": 1 },
+      { "name": "Gold bar", "quantity": 2 },
+      { "name": "Platinum bar", "quantity": 2 }
+    ],
+    "source": "Jeweler",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Fish and chips",
+    "level": 41,
+    "max_price": 244.8,
+    "time": 90,
+    "xp": 29,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 2 },
+      { "name": "Potato", "quantity": 3 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Iron bracelet",
+    "level": 41,
+    "max_price": 658.8,
+    "time": 90,
+    "xp": 79,
+    "needs": [
+      { "name": "Iron bar", "quantity": 2 },
+      { "name": "Refined coal", "quantity": 2 },
+      { "name": "Silver bar", "quantity": 1 }
+    ],
+    "source": "Jeweler",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Coffee bean",
+    "level": 42,
+    "max_price": 64.8,
+    "time": 1500,
+    "xp": 12,
+    "needs": [],
+    "source": "Coffee bush",
+    "per_boat_crate": "4-8"
+  },
+  {
+    "name": "Espresso",
+    "level": 42,
+    "max_price": 248.4,
+    "time": 5,
+    "xp": 29,
+    "needs": [
+      { "name": "Coffee bean", "quantity": 3 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Honey apple cake",
+    "level": 42,
+    "max_price": 482.4,
+    "time": 200,
+    "xp": 57,
+    "needs": [
+      { "name": "Apple", "quantity": 2 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Honey", "quantity": 2 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Caffe latte",
+    "level": 43,
+    "max_price": 219.6,
+    "time": 10,
+    "xp": 26,
+    "needs": [
+      { "name": "Coffee bean", "quantity": 2 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Lobster Trap",
+    "level": 44,
+    "max_price": 0.0,
+    "time": 120,
+    "xp": 5,
+    "needs": [],
+    "source": "Net Maker",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Chocolate popcorn",
+    "level": 44,
+    "max_price": 248.4,
+    "time": 150,
+    "xp": 29,
+    "needs": [
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Corn", "quantity": 2 }
+    ],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Lobster tail",
+    "level": 44,
+    "max_price": 201.6,
+    "time": 360,
+    "xp": 24,
+    "needs": [],
+    "source": "Lobster Pool",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Frutti di Mare pizza",
+    "level": 45,
+    "max_price": 403.2,
+    "time": 15,
+    "xp": 48,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Lobster tail", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Caffe mocha",
+    "level": 45,
+    "max_price": 291.6,
+    "time": 15,
+    "xp": 35,
+    "needs": [
+      { "name": "Coffee bean", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Raspberry mocha",
+    "level": 46,
+    "max_price": 259.2,
+    "time": 30,
+    "xp": 31,
+    "needs": [
+      { "name": "Cacao", "quantity": 1 },
+      { "name": "Coffee bean", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Lobster soup",
+    "level": 46,
+    "max_price": 612.0,
+    "time": 150,
+    "xp": 73,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Lobster tail", "quantity": 2 },
+      { "name": "Tomato", "quantity": 1 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Hot chocolate",
+    "level": 47,
+    "max_price": 316.8,
+    "time": 25,
+    "xp": 38,
+    "needs": [
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Tomato soup",
+    "level": 47,
+    "max_price": 478.8,
+    "time": 90,
+    "xp": 57,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Goat cheese", "quantity": 1 },
+      { "name": "Tomato juice", "quantity": 1 },
+      { "name": "Tomato", "quantity": 2 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Red scarf",
+    "level": 48,
+    "max_price": 288.0,
+    "time": 150,
+    "xp": 34,
+    "needs": [
+      { "name": "Strawberry", "quantity": 2 },
+      { "name": "Wool", "quantity": 2 }
+    ],
+    "source": "Loom",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Lobster skewer",
+    "level": 48,
+    "max_price": 417.6,
+    "time": 40,
+    "xp": 50,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Lobster tail", "quantity": 1 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Beeswax",
+    "level": 48,
+    "max_price": 234.0,
+    "time": 45,
+    "xp": 28,
+    "needs": [{ "name": "Honeycomb", "quantity": 3 }],
+    "source": "Honey Extractor",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Strawberry candle",
+    "level": 48,
+    "max_price": 370.8,
+    "time": 120,
+    "xp": 44,
+    "needs": [
+      { "name": "Beeswax", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 2 }
+    ],
+    "source": "Candle Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Rustic bouquet",
+    "level": 49,
+    "max_price": 208.8,
+    "time": 45,
+    "xp": 25,
+    "needs": [
+      { "name": "Wheat", "quantity": 5 },
+      { "name": "Indigo", "quantity": 3 },
+      { "name": "Cotton", "quantity": 3 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Pumpkin soup",
+    "level": 49,
+    "max_price": 392.4,
+    "time": 120,
+    "xp": 47,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Pumpkin", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Asparagus",
+    "level": 49,
+    "max_price": 43.2,
+    "time": 360,
+    "xp": 8,
+    "needs": [{ "name": "Asparagus", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "6-12"
+  },
+  {
+    "name": "Asparagus quiche",
+    "level": 49,
+    "max_price": 302.4,
+    "time": 120,
+    "xp": 36,
+    "needs": [
+      { "name": "Asparagus", "quantity": 2 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Wheat", "quantity": 4 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Strawberry jam",
+    "level": 50,
+    "max_price": 270.0,
+    "time": 450,
+    "xp": 32,
+    "needs": [{ "name": "Strawberry", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Duck Trap",
+    "level": 50,
+    "max_price": 0.0,
+    "time": 60,
+    "xp": 3,
+    "needs": [],
+    "source": "Net Maker",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Duck feather",
+    "level": 50,
+    "max_price": 140.4,
+    "time": 180,
+    "xp": 17,
+    "needs": [],
+    "source": "Duck Salon",
+    "per_boat_crate": "3-6"
+  },
+  {
+    "name": "Sesame",
+    "level": 50,
+    "max_price": 18.0,
+    "time": 60,
+    "xp": 4,
+    "needs": [{ "name": "Sesame", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "16-25"
+  },
+  {
+    "name": "Sesame ice cream",
+    "level": 50,
+    "max_price": 176.4,
+    "time": 120,
+    "xp": 21,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Sesame", "quantity": 3 },
+      { "name": "Brown sugar", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "2-5"
+  },
+  {
+    "name": "Caramel apple",
+    "level": 51,
+    "max_price": 255.6,
+    "time": 120,
+    "xp": 31,
+    "needs": [
+      { "name": "Apple", "quantity": 1 },
+      { "name": "Syrup", "quantity": 2 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Pillow",
+    "level": 51,
+    "max_price": 676.8,
+    "time": 180,
+    "xp": 81,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 2 },
+      { "name": "Duck feather", "quantity": 3 }
+    ],
+    "source": "Sewing Machine",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Asparagus soup",
+    "level": 51,
+    "max_price": 255.6,
+    "time": 60,
+    "xp": 30,
+    "needs": [
+      { "name": "Asparagus", "quantity": 3 },
+      { "name": "Cream", "quantity": 2 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Toffee",
+    "level": 52,
+    "max_price": 176.4,
+    "time": 90,
+    "xp": 21,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Wheat", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Raspberry candle",
+    "level": 52,
+    "max_price": 360.0,
+    "time": 105,
+    "xp": 43,
+    "needs": [
+      { "name": "Beeswax", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 2 }
+    ],
+    "source": "Candle Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Pineapple",
+    "level": 52,
+    "max_price": 14.4,
+    "time": 30,
+    "xp": 3,
+    "needs": [{ "name": "Pineapple", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "20-31"
+  },
+  {
+    "name": "Pineapple juice",
+    "level": 52,
+    "max_price": 68.4,
+    "time": 45,
+    "xp": 8,
+    "needs": [{ "name": "Pineapple", "quantity": 3 }],
+    "source": "Juice Press",
+    "per_boat_crate": "5-8"
+  },
+  {
+    "name": "Fish soup",
+    "level": 53,
+    "max_price": 298.8,
+    "time": 180,
+    "xp": 35,
+    "needs": [
+      { "name": "Carrot", "quantity": 1 },
+      { "name": "Fish fillet", "quantity": 2 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Potato", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Lily",
+    "level": 53,
+    "max_price": 21.6,
+    "time": 90,
+    "xp": 5,
+    "needs": [{ "name": "Lily", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "12-20"
+  },
+  {
+    "name": "Soy sauce",
+    "level": 54,
+    "max_price": 154.8,
+    "time": 180,
+    "xp": 19,
+    "needs": [
+      { "name": "Soybean", "quantity": 9 },
+      { "name": "Wheat", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Chocolate",
+    "level": 54,
+    "max_price": 460.8,
+    "time": 1200,
+    "xp": 55,
+    "needs": [
+      { "name": "Cacao", "quantity": 3 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Fancy cake",
+    "level": 54,
+    "max_price": 450.0,
+    "time": 15,
+    "xp": 49,
+    "needs": [
+      { "name": "Cream cake", "quantity": 1 },
+      { "name": "Lily", "quantity": 3 },
+      { "name": "Raspberry", "quantity": 3 },
+      { "name": "Gold ore", "quantity": 1 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Rice",
+    "level": 56,
+    "max_price": 18.0,
+    "time": 45,
+    "xp": 3,
+    "needs": [{ "name": "Rice", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "19-32"
+  },
+  {
+    "name": "Sushi roll",
+    "level": 56,
+    "max_price": 489.6,
+    "time": 60,
+    "xp": 58,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Rice", "quantity": 15 },
+      { "name": "Soy sauce", "quantity": 1 }
+    ],
+    "source": "Sushi Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Olive",
+    "level": 57,
+    "max_price": 82.8,
+    "time": 1440,
+    "xp": 17,
+    "needs": [],
+    "source": "Olive Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Lollipop",
+    "level": 57,
+    "max_price": 342.0,
+    "time": 720,
+    "xp": 41,
+    "needs": [
+      { "name": "Cherry", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 2 },
+      { "name": "Syrup", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Lettuce",
+    "level": 58,
+    "max_price": 32.4,
+    "time": 210,
+    "xp": 7,
+    "needs": [{ "name": "Lettuce", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "9-14"
+  },
+  {
+    "name": "Feta salad",
+    "level": 58,
+    "max_price": 745.2,
+    "time": 90,
+    "xp": 89,
+    "needs": [
+      { "name": "Goat cheese", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Olive", "quantity": 2 },
+      { "name": "Roasted tomatoes", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Lobster sushi",
+    "level": 59,
+    "max_price": 637.2,
+    "time": 60,
+    "xp": 76,
+    "needs": [
+      { "name": "Lobster tail", "quantity": 1 },
+      { "name": "Rice", "quantity": 15 },
+      { "name": "Soy sauce", "quantity": 1 }
+    ],
+    "source": "Sushi Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Blanket",
+    "level": 59,
+    "max_price": 1098.0,
+    "time": 210,
+    "xp": 131,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 3 },
+      { "name": "Duck feather", "quantity": 5 },
+      { "name": "Pumpkin", "quantity": 1 }
+    ],
+    "source": "Sewing Machine",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Jelly Beans",
+    "level": 60,
+    "max_price": 684.0,
+    "time": 1440,
+    "xp": 81,
+    "needs": [
+      { "name": "Blackberry jam", "quantity": 1 },
+      { "name": "Raspberry jam", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Olive oil",
+    "level": 60,
+    "max_price": 277.2,
+    "time": 45,
+    "xp": 33,
+    "needs": [{ "name": "Olive", "quantity": 3 }],
+    "source": "Sauce Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Garlic",
+    "level": 60,
+    "max_price": 14.4,
+    "time": 30,
+    "xp": 3,
+    "needs": [{ "name": "Garlic", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "20-32"
+  },
+  {
+    "name": "Garlic bread",
+    "level": 60,
+    "max_price": 198.0,
+    "time": 15,
+    "xp": 24,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Garlic", "quantity": 4 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Veggie bagel",
+    "level": 61,
+    "max_price": 532.8,
+    "time": 40,
+    "xp": 63,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Olive oil", "quantity": 1 },
+      { "name": "Tomato", "quantity": 2 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Peanut",
+    "level": 62,
+    "max_price": 234.0,
+    "time": 0,
+    "xp": 43,
+    "needs": [],
+    "source": "Squirrel House",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Mayonnaise",
+    "level": 62,
+    "max_price": 367.2,
+    "time": 15,
+    "xp": 44,
+    "needs": [
+      { "name": "Egg", "quantity": 4 },
+      { "name": "Olive oil", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "BLT salad",
+    "level": 62,
+    "max_price": 723.6,
+    "time": 105,
+    "xp": 86,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Mayonnaise", "quantity": 1 },
+      { "name": "Roasted tomatoes", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Caramel latte",
+    "level": 62,
+    "max_price": 345.6,
+    "time": 15,
+    "xp": 41,
+    "needs": [
+      { "name": "Coffee bean", "quantity": 2 },
+      { "name": "Toffee", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Honey peanuts",
+    "level": 63,
+    "max_price": 468.0,
+    "time": 40,
+    "xp": 64,
+    "needs": [
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Sunflower",
+    "level": 63,
+    "max_price": 21.6,
+    "time": 90,
+    "xp": 5,
+    "needs": [{ "name": "Sunflower", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "12-19"
+  },
+  {
+    "name": "Egg sushi",
+    "level": 63,
+    "max_price": 550.8,
+    "time": 120,
+    "xp": 66,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Egg", "quantity": 4 },
+      { "name": "Rice", "quantity": 15 },
+      { "name": "Soy sauce", "quantity": 1 }
+    ],
+    "source": "Sushi Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Seafood salad",
+    "level": 64,
+    "max_price": 763.2,
+    "time": 120,
+    "xp": 91,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Lobster tail", "quantity": 1 },
+      { "name": "Mayonnaise", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Berry smoothie",
+    "level": 64,
+    "max_price": 547.2,
+    "time": 75,
+    "xp": 65,
+    "needs": [
+      { "name": "Blackberry", "quantity": 3 },
+      { "name": "Strawberry", "quantity": 3 },
+      { "name": "Raspberry", "quantity": 3 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Snack mix",
+    "level": 64,
+    "max_price": 309.6,
+    "time": 45,
+    "xp": 50,
+    "needs": [
+      { "name": "Corn", "quantity": 2 },
+      { "name": "Sesame", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Popcorn Pot",
+    "per_boat_crate": "5-7"
+  },
+  {
+    "name": "Bright bouquet",
+    "level": 65,
+    "max_price": 338.4,
+    "time": 20,
+    "xp": 40,
+    "needs": [
+      { "name": "Sunflower", "quantity": 5 },
+      { "name": "Indigo", "quantity": 3 },
+      { "name": "Cotton", "quantity": 1 },
+      { "name": "Iron ore", "quantity": 5 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Bacon toast",
+    "level": 65,
+    "max_price": 648.0,
+    "time": 100,
+    "xp": 77,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Mayonnaise", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Pineapple cake",
+    "level": 65,
+    "max_price": 259.2,
+    "time": 75,
+    "xp": 31,
+    "needs": [
+      { "name": "Pineapple", "quantity": 3 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Cherry", "quantity": 2 },
+      { "name": "Wheat", "quantity": 4 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Chocolate pie",
+    "level": 65,
+    "max_price": 514.8,
+    "time": 75,
+    "xp": 70,
+    "needs": [
+      { "name": "Wheat", "quantity": 3 },
+      { "name": "Cacao", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cabbage",
+    "level": 65,
+    "max_price": 18.0,
+    "time": 45,
+    "xp": 3,
+    "needs": [{ "name": "Cabbage", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "12-31"
+  },
+  {
+    "name": "Cabbage soup",
+    "level": 65,
+    "max_price": 270.0,
+    "time": 90,
+    "xp": 32,
+    "needs": [
+      { "name": "Cabbage", "quantity": 3 },
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Potato", "quantity": 2 },
+      { "name": "Carrot", "quantity": 2 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Lemon",
+    "level": 66,
+    "max_price": 93.6,
+    "time": 1740,
+    "xp": 18,
+    "needs": [],
+    "source": "Lemon Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Lemon curd",
+    "level": 66,
+    "max_price": 378.0,
+    "time": 25,
+    "xp": 45,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Lemon", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Olive dip",
+    "level": 66,
+    "max_price": 468.0,
+    "time": 45,
+    "xp": 56,
+    "needs": [
+      { "name": "Olive", "quantity": 3 },
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "Fish fillet", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Egg sandwich",
+    "level": 66,
+    "max_price": 583.2,
+    "time": 80,
+    "xp": 69,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Mayonnaise", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Green smoothie",
+    "level": 66,
+    "max_price": 320.4,
+    "time": 45,
+    "xp": 38,
+    "needs": [
+      { "name": "Apple", "quantity": 1 },
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "Lettuce", "quantity": 5 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Fresh pasta",
+    "level": 67,
+    "max_price": 43.2,
+    "time": 15,
+    "xp": 5,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pasta Maker",
+    "per_boat_crate": "8-12"
+  },
+  {
+    "name": "Pasta salad",
+    "level": 67,
+    "max_price": 759.6,
+    "time": 150,
+    "xp": 90,
+    "needs": [
+      { "name": "Fresh pasta", "quantity": 4 },
+      { "name": "Lemon", "quantity": 2 },
+      { "name": "Olive oil", "quantity": 1 },
+      { "name": "Tomato", "quantity": 2 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Lemon pie",
+    "level": 67,
+    "max_price": 446.4,
+    "time": 135,
+    "xp": 53,
+    "needs": [
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Lemon curd", "quantity": 1 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Grilled asparagus",
+    "level": 67,
+    "max_price": 486.0,
+    "time": 75,
+    "xp": 58,
+    "needs": [
+      { "name": "Asparagus", "quantity": 5 },
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Onion",
+    "level": 68,
+    "max_price": 39.6,
+    "time": 300,
+    "xp": 8,
+    "needs": [{ "name": "Onion", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "8-9"
+  },
+  {
+    "name": "Grilled onion",
+    "level": 68,
+    "max_price": 190.8,
+    "time": 60,
+    "xp": 23,
+    "needs": [
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Onion", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "3"
+  },
+  {
+    "name": "Lemon cake",
+    "level": 68,
+    "max_price": 896.4,
+    "time": 150,
+    "xp": 107,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Lemon curd", "quantity": 2 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Lemon essential oil",
+    "level": 68,
+    "max_price": 288.0,
+    "time": 10,
+    "xp": 34,
+    "needs": [{ "name": "Lemon", "quantity": 3 }],
+    "source": "Essential Oils Lab",
+    "per_boat_crate": "1-???"
+  },
+  {
+    "name": "Peanut butter milkshake",
+    "level": 68,
+    "max_price": 619.2,
+    "time": 100,
+    "xp": 86,
+    "needs": [
+      { "name": "Peanuts", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Cacao", "quantity": 3 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Tomato sauce",
+    "level": 69,
+    "max_price": 230.4,
+    "time": 30,
+    "xp": 27,
+    "needs": [
+      { "name": "Brown sugar", "quantity": 1 },
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "Tomato", "quantity": 2 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Honey toast",
+    "level": 69,
+    "max_price": 255.6,
+    "time": 60,
+    "xp": 31,
+    "needs": [
+      { "name": "Bread", "quantity": 1 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Milk", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Fried rice",
+    "level": 69,
+    "max_price": 205.2,
+    "time": 60,
+    "xp": 24,
+    "needs": [
+      { "name": "Rice", "quantity": 5 },
+      { "name": "Egg", "quantity": 5 }
+    ],
+    "source": "Wok Kitchen",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Yogurt smoothie",
+    "level": 70,
+    "max_price": 349.2,
+    "time": 60,
+    "xp": 42,
+    "needs": [
+      { "name": "Cherry", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Cloche hat",
+    "level": 70,
+    "max_price": 468.0,
+    "time": 120,
+    "xp": 56,
+    "needs": [
+      { "name": "Strawberry", "quantity": 2 },
+      { "name": "Wool", "quantity": 6 }
+    ],
+    "source": "Hat Maker",
+    "per_boat_crate": "1-4"
+  },
+  {
+    "name": "Cucumber",
+    "level": 70,
+    "max_price": 14.4,
+    "time": 35,
+    "xp": 3,
+    "needs": [{ "name": "Cucumber", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "21-31"
+  },
+  {
+    "name": "Cucumber smoothie",
+    "level": 70,
+    "max_price": 266.4,
+    "time": 40,
+    "xp": 32,
+    "needs": [
+      { "name": "Cucumber", "quantity": 3 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Pineapple", "quantity": 3 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Orange",
+    "level": 71,
+    "max_price": 97.2,
+    "time": 1860,
+    "xp": 19,
+    "needs": [],
+    "source": "Orange Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Flower shawl",
+    "level": 71,
+    "max_price": 295.2,
+    "time": 90,
+    "xp": 35,
+    "needs": [
+      { "name": "Wool", "quantity": 2 },
+      { "name": "Sunflower", "quantity": 3 },
+      { "name": "Blackberry", "quantity": 1 }
+    ],
+    "source": "Loom",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Orange juice",
+    "level": 71,
+    "max_price": 234.0,
+    "time": 120,
+    "xp": 28,
+    "needs": [{ "name": "Orange", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Peanut butter and jelly sandwich",
+    "level": 71,
+    "max_price": 601.2,
+    "time": 25,
+    "xp": 80,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Raspberry jam", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Onion soup",
+    "level": 72,
+    "max_price": 327.6,
+    "time": 150,
+    "xp": 39,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Onion", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Lemon candle",
+    "level": 72,
+    "max_price": 457.2,
+    "time": 135,
+    "xp": 55,
+    "needs": [
+      { "name": "Beeswax", "quantity": 1 },
+      { "name": "Lemon", "quantity": 2 }
+    ],
+    "source": "Candle Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Top hat",
+    "level": 72,
+    "max_price": 619.2,
+    "time": 210,
+    "xp": 74,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 3 },
+      { "name": "Duck feather", "quantity": 1 },
+      { "name": "Refined coal", "quantity": 1 }
+    ],
+    "source": "Hat Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Gnocchi",
+    "level": 72,
+    "max_price": 475.2,
+    "time": 80,
+    "xp": 57,
+    "needs": [
+      { "name": "Potato", "quantity": 4 },
+      { "name": "Tomato", "quantity": 3 },
+      { "name": "Wheat", "quantity": 2 },
+      { "name": "Butter", "quantity": 2 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Beetroot",
+    "level": 72,
+    "max_price": 14.4,
+    "time": 40,
+    "xp": 3,
+    "needs": [{ "name": "Beetroot", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "20-31"
+  },
+  {
+    "name": "Winter veggies",
+    "level": 72,
+    "max_price": 198.0,
+    "time": 25,
+    "xp": 24,
+    "needs": [
+      { "name": "Beetroot", "quantity": 2 },
+      { "name": "Carrot", "quantity": 3 },
+      { "name": "Potato", "quantity": 2 },
+      { "name": "Pumpkin", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Rice noodles",
+    "level": 73,
+    "max_price": 100.8,
+    "time": 20,
+    "xp": 12,
+    "needs": [{ "name": "Rice", "quantity": 5 }],
+    "source": "Pasta Maker",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Noodle soup",
+    "level": 73,
+    "max_price": 432.0,
+    "time": 120,
+    "xp": 52,
+    "needs": [
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Rice noodles", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Gracious bouquet",
+    "level": 73,
+    "max_price": 500.4,
+    "time": 40,
+    "xp": 60,
+    "needs": [
+      { "name": "Cotton fabric", "quantity": 1 },
+      { "name": "Lily", "quantity": 5 },
+      { "name": "Gold ore", "quantity": 1 },
+      { "name": "Diamond", "quantity": 1 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Bell pepper",
+    "level": 74,
+    "max_price": 36.0,
+    "time": 270,
+    "xp": 7,
+    "needs": [{ "name": "Bell pepper", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "10-14"
+  },
+  {
+    "name": "Marmalade",
+    "level": 74,
+    "max_price": 457.2,
+    "time": 510,
+    "xp": 54,
+    "needs": [{ "name": "Orange", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Sun hat",
+    "level": 74,
+    "max_price": 558.0,
+    "time": 150,
+    "xp": 66,
+    "needs": [
+      { "name": "Duck feather", "quantity": 2 },
+      { "name": "Indigo", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 },
+      { "name": "Wool", "quantity": 3 }
+    ],
+    "source": "Hat Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Veggie lasagna",
+    "level": 74,
+    "max_price": 532.8,
+    "time": 100,
+    "xp": 63,
+    "needs": [
+      { "name": "Tomato sauce", "quantity": 1 },
+      { "name": "Fresh pasta", "quantity": 3 },
+      { "name": "Carrot", "quantity": 1 },
+      { "name": "Cheese", "quantity": 1 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Veggie platter",
+    "level": 74,
+    "max_price": 266.4,
+    "time": 120,
+    "xp": 32,
+    "needs": [
+      { "name": "Bell pepper", "quantity": 2 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Tomato", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cotton Candy",
+    "level": 75,
+    "max_price": 226.8,
+    "time": 30,
+    "xp": 27,
+    "needs": [
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Hot dog",
+    "level": 75,
+    "max_price": 370.8,
+    "time": 30,
+    "xp": 44,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Bread", "quantity": 1 },
+      { "name": "Tomato sauce", "quantity": 1 }
+    ],
+    "source": "Hot Dog Stand",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Coleslaw",
+    "level": 75,
+    "max_price": 468.0,
+    "time": 75,
+    "xp": 56,
+    "needs": [
+      { "name": "Cabbage", "quantity": 3 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Mayonnaise", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Peach",
+    "level": 76,
+    "max_price": 100.8,
+    "time": 1800,
+    "xp": 20,
+    "needs": [],
+    "source": "Peach Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Peach tart",
+    "level": 76,
+    "max_price": 435.6,
+    "time": 150,
+    "xp": 52,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Peach", "quantity": 3 },
+      { "name": "Wheat", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Tofu dog",
+    "level": 76,
+    "max_price": 367.2,
+    "time": 45,
+    "xp": 44,
+    "needs": [
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Soybean", "quantity": 6 },
+      { "name": "Tomato", "quantity": 4 }
+    ],
+    "source": "Hot Dog Stand",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Big sushi roll",
+    "level": 76,
+    "max_price": 648.0,
+    "time": 90,
+    "xp": 77,
+    "needs": [
+      { "name": "Lettuce", "quantity": 5 },
+      { "name": "Rice", "quantity": 20 },
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Egg", "quantity": 3 }
+    ],
+    "source": "Sushi Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Beetroot salad",
+    "level": 76,
+    "max_price": 234.0,
+    "time": 45,
+    "xp": 28,
+    "needs": [
+      { "name": "Beetroot", "quantity": 3 },
+      { "name": "Goat Cheese", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Plain Donut",
+    "level": 76,
+    "max_price": 129.6,
+    "time": 15,
+    "xp": 15,
+    "needs": [
+      { "name": "Milk", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Salsa",
+    "level": 77,
+    "max_price": 252.0,
+    "time": 20,
+    "xp": 30,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Tomato", "quantity": 2 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Taco",
+    "level": 77,
+    "max_price": 396.0,
+    "time": 45,
+    "xp": 47,
+    "needs": [
+      { "name": "Corn bread", "quantity": 1 },
+      { "name": "Bacon", "quantity": 1 },
+      { "name": "Salsa", "quantity": 1 }
+    ],
+    "source": "Taco Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Colourful omelet",
+    "level": 77,
+    "max_price": 136.8,
+    "time": 60,
+    "xp": 16,
+    "needs": [
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Bell pepper", "quantity": 1 },
+      { "name": "Cabbage", "quantity": 1 }
+    ],
+    "source": "Omelet Station",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Spring omelet",
+    "level": 77,
+    "max_price": 230.4,
+    "time": 40,
+    "xp": 27,
+    "needs": [
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Asparagus", "quantity": 2 },
+      { "name": "Butter", "quantity": 1 }
+    ],
+    "source": "Omelet Station",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Sesame brittle",
+    "level": 78,
+    "max_price": 270.0,
+    "time": 60,
+    "xp": 32,
+    "needs": [
+      { "name": "Sesame", "quantity": 3 },
+      { "name": "Ginger", "quantity": 1 },
+      { "name": "Honey", "quantity": 1 }
+    ],
+    "source": "Candy Machine",
+    "per_boat_crate": null
+  },
+  {
+    "name": "Summer rolls",
+    "level": 78,
+    "max_price": 316.8,
+    "time": 60,
+    "xp": 38,
+    "needs": [
+      { "name": "Rice noodles", "quantity": 2 },
+      { "name": "Carrot", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Orange sorbet",
+    "level": 78,
+    "max_price": 399.6,
+    "time": 210,
+    "xp": 48,
+    "needs": [
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Orange", "quantity": 2 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Corn dog",
+    "level": 78,
+    "max_price": 529.2,
+    "time": 60,
+    "xp": 63,
+    "needs": [
+      { "name": "Bacon", "quantity": 4 },
+      { "name": "Corn", "quantity": 4 },
+      { "name": "Olive oil", "quantity": 1 }
+    ],
+    "source": "Hot Dog Stand",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Potato soup",
+    "level": 78,
+    "max_price": 255.6,
+    "time": 150,
+    "xp": 31,
+    "needs": [
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Potato", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Ginger",
+    "level": 78,
+    "max_price": 28.8,
+    "time": 150,
+    "xp": 6,
+    "needs": [{ "name": "Ginger", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "11-16"
+  },
+  {
+    "name": "Affogato",
+    "level": 78,
+    "max_price": 435,
+    "time": 20,
+    "xp": 56,
+    "needs": [
+      { "name": "Vanilla ice cream", "quantity": 1 },
+      { "name": "Espresso", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Fish taco",
+    "level": 79,
+    "max_price": 392.4,
+    "time": 90,
+    "xp": 47,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Corn bread", "quantity": 2 },
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "Taco Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Peach jam",
+    "level": 79,
+    "max_price": 464.4,
+    "time": 480,
+    "xp": 55,
+    "needs": [{ "name": "Peach", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Lobster pasta",
+    "level": 79,
+    "max_price": 637.2,
+    "time": 120,
+    "xp": 76,
+    "needs": [
+      { "name": "Lobster tail", "quantity": 1 },
+      { "name": "Cream", "quantity": 2 },
+      { "name": "Fresh pasta", "quantity": 3 },
+      { "name": "Tomato", "quantity": 4 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Cucumber sandwich",
+    "level": 79,
+    "max_price": 464.4,
+    "time": 35,
+    "xp": 55,
+    "needs": [
+      { "name": "Cucumber", "quantity": 2 },
+      { "name": "Mayonnaise", "quantity": 1 },
+      { "name": "Bread", "quantity": 2 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Spicy fish",
+    "level": 79,
+    "max_price": 543.6,
+    "time": 90,
+    "xp": 65,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 3 },
+      { "name": "Garlic", "quantity": 5 },
+      { "name": "Olive oil", "quantity": 1 }
+    ],
+    "source": "Wok Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Sprinkled Donut",
+    "level": 79,
+    "max_price": 313.2,
+    "time": 20,
+    "xp": 37,
+    "needs": [
+      { "name": "Plain Donut", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cheese omelet",
+    "level": 79,
+    "max_price": 464.4,
+    "time": 90,
+    "xp": 55,
+    "needs": [
+      { "name": "Egg", "quantity": 3 },
+      { "name": "Cheese", "quantity": 2 },
+      { "name": "Tomato", "quantity": 2 },
+      { "name": "Onion", "quantity": 1 }
+    ],
+    "source": "Omelet Station",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Tea leaf",
+    "level": 80,
+    "max_price": 43.2,
+    "time": 390,
+    "xp": 9,
+    "needs": [{ "name": "Tea leaf", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "8-11"
+  },
+  {
+    "name": "Green tea",
+    "level": 80,
+    "max_price": 241.2,
+    "time": 30,
+    "xp": 29,
+    "needs": [{ "name": "Tea leaf", "quantity": 5 }],
+    "source": "Tea Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Ginger essential oil",
+    "level": 80,
+    "max_price": 162,
+    "time": 20,
+    "xp": 19,
+    "needs": [{ "name": "ginger", "quantity": 5 }],
+    "source": "essential oils lab",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Onion dog",
+    "level": 80,
+    "max_price": 306.0,
+    "time": 75,
+    "xp": 36,
+    "needs": [
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Bread", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Onion", "quantity": 3 }
+    ],
+    "source": "Hot Dog Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Stuffed peppers",
+    "level": 80,
+    "max_price": 352.8,
+    "time": 20,
+    "xp": 42,
+    "needs": [
+      { "name": "Bell pepper", "quantity": 3 },
+      { "name": "Bacon", "quantity": 1 },
+      { "name": "Rice", "quantity": 3 },
+      { "name": "Cheese", "quantity": 1 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Milk tea",
+    "level": 81,
+    "max_price": 190.8,
+    "time": 45,
+    "xp": 23,
+    "needs": [
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 3 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Bell pepper soup",
+    "level": 81,
+    "max_price": 439.2,
+    "time": 60,
+    "xp": 52,
+    "needs": [
+      { "name": "Bread", "quantity": 1 },
+      { "name": "Olive oil", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Bell pepper", "quantity": 2 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Chocolate fondue",
+    "level": 81,
+    "max_price": 626.4,
+    "time": 25,
+    "xp": 74,
+    "needs": [
+      { "name": "Chocolate", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 3 }
+    ],
+    "source": "Fondue Pot",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Peony",
+    "level": 82,
+    "max_price": 36.0,
+    "time": 240,
+    "xp": 7,
+    "needs": [{ "name": "Peony", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "10-14"
+  },
+  {
+    "name": "Quesadilla",
+    "level": 82,
+    "max_price": 241.2,
+    "time": 60,
+    "xp": 29,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Wheat", "quantity": 4 }
+    ],
+    "source": "Taco Kitchen",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Fruit salad",
+    "level": 82,
+    "max_price": 597.6,
+    "time": 120,
+    "xp": 71,
+    "needs": [
+      { "name": "Blackberry", "quantity": 2 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Orange", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 3 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Crunchy Donut",
+    "level": 82,
+    "max_price": 594.0,
+    "time": 30,
+    "xp": 71,
+    "needs": [
+      { "name": "Plain donut", "quantity": 1 },
+      { "name": "Cacao", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Pasta carbonara",
+    "level": 83,
+    "max_price": 410.4,
+    "time": 150,
+    "xp": 49,
+    "needs": [
+      { "name": "Fresh pasta", "quantity": 3 },
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Cheese", "quantity": 1 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Peach ice cream",
+    "level": 83,
+    "max_price": 450.0,
+    "time": 180,
+    "xp": 54,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Peach", "quantity": 2 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Honey tea",
+    "level": 83,
+    "max_price": 313.2,
+    "time": 40,
+    "xp": 37,
+    "needs": [
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 3 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Broccoli",
+    "level": 83,
+    "max_price": 21.6,
+    "time": 90,
+    "xp": 4,
+    "needs": [{ "name": "Broccoli", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "16-24"
+  },
+  {
+    "name": "Broccoli pasta",
+    "level": 83,
+    "max_price": 345.6,
+    "time": 60,
+    "xp": 41,
+    "needs": [
+      { "name": "Broccoli", "quantity": 3 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Fresh pasta", "quantity": 3 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Rice omelet",
+    "level": 83,
+    "max_price": 572.4,
+    "time": 120,
+    "xp": 68,
+    "needs": [
+      { "name": "Egg", "quantity": 3 },
+      { "name": "Tomato Sauce", "quantity": 2 },
+      { "name": "Rice", "quantity": 1 }
+    ],
+    "source": "Omelet Station",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Summer salad",
+    "level": 84,
+    "max_price": 554.4,
+    "time": 180,
+    "xp": 66,
+    "needs": [
+      { "name": "Goat cheese", "quantity": 1 },
+      { "name": "Onion", "quantity": 3 },
+      { "name": "Peach", "quantity": 1 },
+      { "name": "Tomato", "quantity": 3 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Grapes",
+    "level": 84,
+    "max_price": 32.4,
+    "time": 180,
+    "xp": 6,
+    "needs": [{ "name": "Grapes", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "11-15"
+  },
+  {
+    "name": "Grape juice",
+    "level": 84,
+    "max_price": 104.4,
+    "time": 150,
+    "xp": 13,
+    "needs": [{ "name": "Grapes", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-6"
+  },
+  {
+    "name": "Onion melt",
+    "level": 84,
+    "max_price": 417.6,
+    "time": 90,
+    "xp": 50,
+    "needs": [
+      { "name": "Corn bread", "quantity": 2 },
+      { "name": "Onion", "quantity": 3 },
+      { "name": "Cheese", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Honey soap",
+    "level": 84,
+    "max_price": 327.6,
+    "time": 60,
+    "xp": 39,
+    "needs": [
+      { "name": "Goat milk", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Honeycomb", "quantity": 1 }
+    ],
+    "source": "Bath Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Lemon lotion",
+    "level": 84,
+    "max_price": 403.2,
+    "time": 75,
+    "xp": 48,
+    "needs": [
+      { "name": "Olive oil", "quantity": 1 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "Bath Kiosk",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Colorful Candles",
+    "level": 84,
+    "max_price": 324.0,
+    "time": 110,
+    "xp": 39,
+    "needs": [
+      { "name": "Beeswax", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 },
+      { "name": "Carrot", "quantity": 1 }
+    ],
+    "source": "Candle Maker",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Mint",
+    "level": 85,
+    "max_price": 32.4,
+    "time": 180,
+    "xp": 6,
+    "needs": [{ "name": "Mint", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "11-16"
+  },
+  {
+    "name": "Mint essential oil",
+    "level": 85,
+    "max_price": 172.8,
+    "time": 15,
+    "xp": 21,
+    "needs": [{ "name": "Mint", "quantity": 3 }],
+    "source": "Essential Oils Lab",
+    "per_boat_crate": "1-???"
+  },
+  {
+    "name": "Grape jam",
+    "level": 85,
+    "max_price": 162.0,
+    "time": 390,
+    "xp": 19,
+    "needs": [{ "name": "Grapes", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Mint ice cream",
+    "level": 85,
+    "max_price": 288.0,
+    "time": 135,
+    "xp": 34,
+    "needs": [
+      { "name": "Cream", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Mint", "quantity": 2 },
+      { "name": "Cacao", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Flower crown",
+    "level": 86,
+    "max_price": 331.2,
+    "time": 120,
+    "xp": 40,
+    "needs": [
+      { "name": "Peony", "quantity": 5 },
+      { "name": "Cotton", "quantity": 4 }
+    ],
+    "source": "Hat Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Lemon tea",
+    "level": 86,
+    "max_price": 241.2,
+    "time": 20,
+    "xp": 29,
+    "needs": [
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 3 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Bacon fondue",
+    "level": 86,
+    "max_price": 507.6,
+    "time": 30,
+    "xp": 60,
+    "needs": [
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Broccoli", "quantity": 1 },
+      { "name": "Bell pepper", "quantity": 1 },
+      { "name": "Olive oil", "quantity": 1 }
+    ],
+    "source": "Fondue Pot",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Peanut noodles",
+    "level": 86,
+    "max_price": 597.6,
+    "time": 45,
+    "xp": 80,
+    "needs": [
+      { "name": "Ginger", "quantity": 1 },
+      { "name": "Rice noodles", "quantity": 1 },
+      { "name": "Soy sauce", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Wok Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Gingerbread cookie",
+    "level": 86,
+    "max_price": 273.6,
+    "time": 30,
+    "xp": 33,
+    "needs": [
+      { "name": "Wheat", "quantity": 5 },
+      { "name": "Butter", "quantity": 1 },
+      { "name": "Syrup", "quantity": 1 },
+      { "name": "Ginger", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cream Donut",
+    "level": 86,
+    "max_price": 230.4,
+    "time": 25,
+    "xp": 27,
+    "needs": [
+      { "name": "Plain donut", "quantity": 1 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Brown sugar", "quantity": 1 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "3"
+  },
+  {
+    "name": "Nachos",
+    "level": 87,
+    "max_price": 432.0,
+    "time": 75,
+    "xp": 52,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Corn", "quantity": 4 },
+      { "name": "Salsa", "quantity": 1 }
+    ],
+    "source": "Taco Kitchen",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Spicy pasta",
+    "level": 87,
+    "max_price": 576.0,
+    "time": 90,
+    "xp": 69,
+    "needs": [
+      { "name": "Fresh pasta", "quantity": 3 },
+      { "name": "Tomato sauce", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 3 },
+      { "name": "Onion", "quantity": 2 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Broccoli soup",
+    "level": 87,
+    "max_price": 237.6,
+    "time": 75,
+    "xp": 28,
+    "needs": [
+      { "name": "Broccoli", "quantity": 3 },
+      { "name": "Onion", "quantity": 1 },
+      { "name": "Potato", "quantity": 3 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Bacon fries",
+    "level": 87,
+    "max_price": 302.4,
+    "time": 25,
+    "xp": 36,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Potato", "quantity": 4 },
+      { "name": "Garlic", "quantity": 1 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Potato Omelet",
+    "level": 87,
+    "max_price": 270.0,
+    "time": 75,
+    "xp": 32,
+    "needs": [
+      { "name": "Egg", "quantity": 3 },
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Potato", "quantity": 1 }
+    ],
+    "source": "Omelet Station",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "banana",
+    "level": 88,
+    "max_price": 104.4,
+    "time": 1620,
+    "xp": 20,
+    "needs": [],
+    "source": "Banana Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Mixed smoothie",
+    "level": 88,
+    "max_price": 504.0,
+    "time": 30,
+    "xp": 60,
+    "needs": [
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "Orange", "quantity": 2 },
+      { "name": "Peach", "quantity": 2 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Iced banana latte",
+    "level": 88,
+    "max_price": 277.2,
+    "time": 20,
+    "xp": 33,
+    "needs": [
+      { "name": "Banana", "quantity": 1 },
+      { "name": "Coffee bean", "quantity": 2 },
+      { "name": "Milk", "quantity": 1 }
+    ],
+    "source": "Coffee Kiosk",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Apple ginger tea",
+    "level": 88,
+    "max_price": 169.2,
+    "time": 30,
+    "xp": 20,
+    "needs": [
+      { "name": "Ginger", "quantity": 1 },
+      { "name": "Apple", "quantity": 2 },
+      { "name": "Tea leaf", "quantity": 1 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "4"
+  },
+  {
+    "name": "Bacon Donut",
+    "level": 88,
+    "max_price": 388.8,
+    "time": 30,
+    "xp": 46,
+    "needs": [
+      { "name": "Plain donut", "quantity": 1 },
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Syrup", "quantity": 1 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Passion fruit",
+    "level": 88,
+    "max_price": 18.0,
+    "time": 60,
+    "xp": 4,
+    "needs": [{ "name": "Passion fruit", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "16-24"
+  },
+  {
+    "name": "Passion fruit juice",
+    "level": 88,
+    "max_price": 64.8,
+    "time": 45,
+    "xp": 8,
+    "needs": [{ "name": "Passion fruit", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "7-9"
+  },
+  {
+    "name": "Orange tea",
+    "level": 89,
+    "max_price": 255.6,
+    "time": 40,
+    "xp": 30,
+    "needs": [
+      { "name": "Orange", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 3 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Fruit cake",
+    "level": 89,
+    "max_price": 450.0,
+    "time": 180,
+    "xp": 54,
+    "needs": [
+      { "name": "Cherry", "quantity": 2 },
+      { "name": "Grapes", "quantity": 2 },
+      { "name": "Orange", "quantity": 2 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Mushroom",
+    "level": 89,
+    "max_price": 10.8,
+    "time": 20,
+    "xp": 2,
+    "needs": [{ "name": "Mushroom", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "33-50"
+  },
+  {
+    "name": "Mushroom salad",
+    "level": 89,
+    "max_price": 216.0,
+    "time": 60,
+    "xp": 26,
+    "needs": [
+      { "name": "Mushroom", "quantity": 3 },
+      { "name": "Lettuce", "quantity": 1 },
+      { "name": "Potato", "quantity": 2 },
+      { "name": "Bacon", "quantity": 1 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Tofu stir fry",
+    "level": 89,
+    "max_price": 306.0,
+    "time": 75,
+    "xp": 37,
+    "needs": [
+      { "name": "Soybean", "quantity": 3 },
+      { "name": "Onion", "quantity": 3 },
+      { "name": "Broccoli", "quantity": 3 },
+      { "name": "Sesame", "quantity": 3 }
+    ],
+    "source": "Wok Kitchen",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Candy bouquet",
+    "level": 90,
+    "max_price": 554.4,
+    "time": 20,
+    "xp": 66,
+    "needs": [
+      { "name": "Peony", "quantity": 3 },
+      { "name": "Toffee", "quantity": 1 },
+      { "name": "Caramel apple", "quantity": 1 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Eggplant",
+    "level": 90,
+    "max_price": 14.4,
+    "time": 40,
+    "xp": 3,
+    "needs": [{ "name": "Eggplant", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "22-32"
+  },
+  {
+    "name": "Grilled eggplant",
+    "level": 90,
+    "max_price": 324.0,
+    "time": 40,
+    "xp": 39,
+    "needs": [
+      { "name": "Eggplant", "quantity": 3 },
+      { "name": "Salsa", "quantity": 1 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Banana bread",
+    "level": 91,
+    "max_price": 424.8,
+    "time": 30,
+    "xp": 50,
+    "needs": [
+      { "name": "Banana", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Grapes", "quantity": 2 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Cheese fondue",
+    "level": 91,
+    "max_price": 493.2,
+    "time": 20,
+    "xp": 59,
+    "needs": [
+      { "name": "Potato bread", "quantity": 1 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Mushroom", "quantity": 2 },
+      { "name": "Tomato", "quantity": 1 }
+    ],
+    "source": "Fondue Pot",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Hand pies",
+    "level": 91,
+    "max_price": 295.2,
+    "time": 20,
+    "xp": 35,
+    "needs": [
+      { "name": "Apple jam", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Wheat", "quantity": 5 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Pickles",
+    "level": 91,
+    "max_price": 270.0,
+    "time": 240,
+    "xp": 32,
+    "needs": [
+      { "name": "Cucumber", "quantity": 3 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "Preservation Station",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Watermelon",
+    "level": 92,
+    "max_price": 39.6,
+    "time": 300,
+    "xp": 8,
+    "needs": [{ "name": "Watermelon", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "8-12"
+  },
+  {
+    "name": "Iced tea",
+    "level": 92,
+    "max_price": 252.0,
+    "time": 30,
+    "xp": 30,
+    "needs": [
+      { "name": "Peach", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 3 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Goat cheese toast",
+    "level": 92,
+    "max_price": 302.4,
+    "time": 50,
+    "xp": 36,
+    "needs": [
+      { "name": "Bread", "quantity": 1 },
+      { "name": "Goat cheese", "quantity": 1 },
+      { "name": "Grapes", "quantity": 3 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Watermelon juice",
+    "level": 92,
+    "max_price": 108.0,
+    "time": 60,
+    "xp": 13,
+    "needs": [{ "name": "Watermelon", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "4-5"
+  },
+  {
+    "name": "Birthday Bouquet",
+    "level": 92,
+    "max_price": 349.2,
+    "time": 20,
+    "xp": 42,
+    "needs": [
+      { "name": "Cherry Juice", "quantity": 1 },
+      { "name": "Peony", "quantity": 3 },
+      { "name": "Lily", "quantity": 1 },
+      { "name": "Indigo", "quantity": 1 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Passion fruit pie",
+    "level": 92,
+    "max_price": 111.6,
+    "time": 50,
+    "xp": 13,
+    "needs": [
+      { "name": "Passion fruit", "quantity": 3 },
+      { "name": "Wheat", "quantity": 2 },
+      { "name": "Egg", "quantity": 1 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "4-5"
+  },
+  {
+    "name": "Soft bouquet",
+    "level": 93,
+    "max_price": 298.8,
+    "time": 30,
+    "xp": 36,
+    "needs": [
+      { "name": "Peony", "quantity": 4 },
+      { "name": "Cotton", "quantity": 1 },
+      { "name": "Cotton fabric", "quantity": 1 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Black sesame smoothie",
+    "level": 93,
+    "max_price": 313.2,
+    "time": 45,
+    "xp": 37,
+    "needs": [
+      { "name": "Sesame", "quantity": 3 },
+      { "name": "Banana", "quantity": 1 },
+      { "name": "Goat milk", "quantity": 2 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Exfoliating soap",
+    "level": 93,
+    "max_price": 363.6,
+    "time": 60,
+    "xp": 43,
+    "needs": [
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Coffee bean", "quantity": 2 },
+      { "name": "Raspberry", "quantity": 1 }
+    ],
+    "source": "Bath Kiosk",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Filled Donut",
+    "level": 93,
+    "max_price": 403.2,
+    "time": 35,
+    "xp": 48,
+    "needs": [
+      { "name": "Plain donut", "quantity": 1 },
+      { "name": "Raspberry jam", "quantity": 1 }
+    ],
+    "source": "Donut Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Plum",
+    "level": 94,
+    "max_price": 82.8,
+    "time": 1440,
+    "xp": 16,
+    "needs": [],
+    "source": "Plum Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Banana pancakes",
+    "level": 94,
+    "max_price": 352.8,
+    "time": 60,
+    "xp": 42,
+    "needs": [
+      { "name": "Banana", "quantity": 1 },
+      { "name": "Blackberry", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Wheat", "quantity": 3 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Plum jam",
+    "level": 94,
+    "max_price": 385.2,
+    "time": 300,
+    "xp": 46,
+    "needs": [{ "name": "Plum", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Clay",
+    "level": 94,
+    "max_price": 18.0,
+    "time": 110,
+    "xp": 5,
+    "needs": [{ "name": "Clay", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "12-19"
+  },
+  {
+    "name": "Tea pot",
+    "level": 94,
+    "max_price": 219.6,
+    "time": 220,
+    "xp": 26,
+    "needs": [
+      { "name": "Clay", "quantity": 3 },
+      { "name": "Coffee bean", "quantity": 1 },
+      { "name": "Gold ore", "quantity": 1 }
+    ],
+    "source": "Pottery Studio",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Floral candle",
+    "level": 95,
+    "max_price": 442.8,
+    "time": 120,
+    "xp": 53,
+    "needs": [
+      { "name": "Beeswax", "quantity": 1 },
+      { "name": "Peony", "quantity": 2 },
+      { "name": "Sunflower", "quantity": 2 },
+      { "name": "Indigo", "quantity": 3 }
+    ],
+    "source": "Candle Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Chocolate roll",
+    "level": 95,
+    "max_price": 604.8,
+    "time": 90,
+    "xp": 72,
+    "needs": [
+      { "name": "Cacao", "quantity": 5 },
+      { "name": "Cream", "quantity": 1 },
+      { "name": "Wheat", "quantity": 3 },
+      { "name": "Mint", "quantity": 3 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Canned fish",
+    "level": 95,
+    "max_price": 471.6,
+    "time": 220,
+    "xp": 56,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 2 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Olive oil", "quantity": 1 }
+    ],
+    "source": "Preservation Station",
+    "per_boat_crate": "??"
+  },
+  {
+    "name": "Chickpea",
+    "level": 95,
+    "max_price": 18.0,
+    "time": 60,
+    "xp": 4,
+    "needs": [{ "name": "Chickpea", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "16-24"
+  },
+  {
+    "name": "Hummus",
+    "level": 95,
+    "max_price": 277.2,
+    "time": 30,
+    "xp": 33,
+    "needs": [
+      { "name": "Chickpea", "quantity": 3 },
+      { "name": "Lemon", "quantity": 2 },
+      { "name": "Garlic", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Banana split",
+    "level": 96,
+    "max_price": 403.2,
+    "time": 210,
+    "xp": 48,
+    "needs": [
+      { "name": "Banana", "quantity": 1 },
+      { "name": "Cherry", "quantity": 3 },
+      { "name": "Cream", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Fish skewer",
+    "level": 96,
+    "max_price": 176.4,
+    "time": 30,
+    "xp": 21,
+    "needs": [
+      { "name": "Fish fillet", "quantity": 1 },
+      { "name": "Mushroom", "quantity": 3 },
+      { "name": "Ginger", "quantity": 1 },
+      { "name": "Sesame", "quantity": 2 }
+    ],
+    "source": "BBQ Grill",
+    "per_boat_crate": "2-8"
+  },
+  {
+    "name": "Passion fruit jam",
+    "level": 96,
+    "max_price": 118.8,
+    "time": 320,
+    "xp": 14,
+    "needs": [{ "name": "Passion fruit", "quantity": 3 }],
+    "source": "Jam Maker",
+    "per_boat_crate": "4"
+  },
+  {
+    "name": "Potted plant",
+    "level": 96,
+    "max_price": 151.2,
+    "time": 220,
+    "xp": 26,
+    "needs": [
+      { "name": "Clay", "quantity": 3 },
+      { "name": "Sunflower", "quantity": 1 }
+    ],
+    "source": "Pottery Studio",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Mango",
+    "level": 97,
+    "max_price": 100.8,
+    "time": 1920,
+    "xp": 20,
+    "needs": [],
+    "source": "Mango Tree",
+    "per_boat_crate": "4-6"
+  },
+  {
+    "name": "Mint tea",
+    "level": 97,
+    "max_price": 255.6,
+    "time": 35,
+    "xp": 31,
+    "needs": [
+      { "name": "Tea leaf", "quantity": 3 },
+      { "name": "Mint", "quantity": 1 },
+      { "name": "Watermelon", "quantity": 1 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Mushroom pot pie",
+    "level": 97,
+    "max_price": 162.0,
+    "time": 60,
+    "xp": 19,
+    "needs": [
+      { "name": "Mushroom", "quantity": 3 },
+      { "name": "Cabbage", "quantity": 3 },
+      { "name": "Wheat", "quantity": 3 },
+      { "name": "Egg", "quantity": 2 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-3"
+  },
+  {
+    "name": "Mango juice",
+    "level": 97,
+    "max_price": 230.4,
+    "time": 50,
+    "xp": 27,
+    "needs": [{ "name": "Mango", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Flower pendant",
+    "level": 98,
+    "max_price": 698.4,
+    "time": 60,
+    "xp": 83,
+    "needs": [
+      { "name": "Peony", "quantity": 3 },
+      { "name": "Platinum bar", "quantity": 1 },
+      { "name": "Gold bar", "quantity": 1 }
+    ],
+    "source":"jeweler",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Chili poppers",
+    "level": 98,
+    "max_price": 406.8,
+    "time": 40,
+    "xp": 48,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 3 },
+      { "name": "Wheat", "quantity": 1 },
+      { "name": "Bacon", "quantity": 3 },
+      { "name": "Cheese", "quantity": 1 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Falafel",
+    "level": 98,
+    "max_price": 226.8,
+    "time": 55,
+    "xp": 27,
+    "needs": [
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Chickpea", "quantity": 3 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Garlic", "quantity": 2 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Kimchi",
+    "level": 98,
+    "max_price": 219.6,
+    "time": 300,
+    "xp": 26,
+    "needs": [
+      { "name": "Cabbage", "quantity": 5 },
+      { "name": "Ginger", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 1 },
+      { "name": "Garlic", "quantity": 1 }
+    ],
+    "source": "Preservation Station",
+    "per_boat_crate": "??"
+  },
+  {
+    "name": "Eggplant parmesan",
+    "level": 99,
+    "max_price": 442.8,
+    "time": 45,
+    "xp": 53,
+    "needs": [
+      { "name": "Eggplant", "quantity": 3 },
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Tomato sauce", "quantity": 1 }
+    ],
+    "source": "Pie Oven",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Honey face mask",
+    "level": 99,
+    "max_price": 320.4,
+    "time": 90,
+    "xp": 38,
+    "needs": [
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "Bath Kiosk",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Clay mug",
+    "level": 99,
+    "max_price": 212.4,
+    "time": 200,
+    "xp": 25,
+    "needs": [
+      { "name": "Clay", "quantity": 3 },
+      { "name": "Indigo", "quantity": 2 },
+      { "name": "Peony", "quantity": 1 }
+    ],
+    "source": "Pottery Studio",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Rich fudge",
+    "level": 99,
+    "max_price": 644.4,
+    "time": 120,
+    "xp": 77,
+    "needs": [
+      { "name": "Cacao", "quantity": 3 },
+      { "name": "Butter", "quantity": 3 },
+      { "name": "White sugar", "quantity": 2 }
+    ],
+    "source": "Fudge Shop",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Cocoa smoothie",
+    "level": 100,
+    "max_price": 511.2,
+    "time": 40,
+    "xp": 61,
+    "needs": [
+      { "name": "Banana", "quantity": 2 },
+      { "name": "Cacao", "quantity": 3 },
+      { "name": "Milk", "quantity": 1 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Fried candy bar",
+    "level": 100,
+    "max_price": 658.8,
+    "time": 15,
+    "xp": 87,
+    "needs": [
+      { "name": "Cacao", "quantity": 3 },
+      { "name": "Cookie", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 1 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Tart dressing",
+    "level": 100,
+    "max_price": 288.0,
+    "time": 30,
+    "xp": 34,
+    "needs": [
+      { "name": "Passion fruit", "quantity": 2 },
+      { "name": "Chili pepper", "quantity": 2 },
+      { "name": "Honey", "quantity": 1 }
+    ],
+    "source": "Sauce Maker",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Tropical fondue",
+    "level": 100,
+    "max_price": 417.6,
+    "time": 35,
+    "xp": 50,
+    "needs": [
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Cream", "quantity": 2 },
+      { "name": "Pineapple", "quantity": 3 },
+      { "name": "Mango", "quantity": 2 }
+    ],
+    "source": "Fondue Pot",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Coconut",
+    "level": 101,
+    "max_price": 108.0,
+    "time": 2160,
+    "xp": 21,
+    "needs": [],
+    "source": "Coconut Tree",
+    "per_boat_crate": "4-5"
+  },
+  {
+    "name": "Mushroom pasta",
+    "level": 101,
+    "max_price": 280.8,
+    "time": 75,
+    "xp": 33,
+    "needs": [
+      { "name": "Mushroom", "quantity": 5 },
+      { "name": "Fresh pasta", "quantity": 3 },
+      { "name": "Goat milk", "quantity": 1 }
+    ],
+    "source": "Pasta Kitchen",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Macaroon",
+    "level": 101,
+    "max_price": 421.2,
+    "time": 30,
+    "xp": 50,
+    "needs": [
+      { "name": "Cacao", "quantity": 1 },
+      { "name": "Coconut", "quantity": 2 },
+      { "name": "White sugar", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Plum smoothie",
+    "level": 102,
+    "max_price": 522.0,
+    "time": 35,
+    "xp": 62,
+    "needs": [
+      { "name": "Plum", "quantity": 3 },
+      { "name": "Grapes", "quantity": 1 },
+      { "name": "Mint", "quantity": 1 },
+      { "name": "Honey", "quantity": 1 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Dried fruit",
+    "level": 102,
+    "max_price": 266.4,
+    "time": 180,
+    "xp": 32,
+    "needs": [
+      { "name": "Grapes", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 1 },
+      { "name": "Strawberry", "quantity": 1 },
+      { "name": "Orange", "quantity": 1 }
+    ],
+    "source": "Preservation Station",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Mint fudge",
+    "level": 102,
+    "max_price": 522.0,
+    "time": 150,
+    "xp": 62,
+    "needs": [
+      { "name": "Butter", "quantity": 2 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Mint", "quantity": 3 }
+    ],
+    "source": "Fudge Shop",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Coconut ice cream",
+    "level": 102,
+    "max_price": 320.4,
+    "time": 15,
+    "xp": 38,
+    "needs": [
+      { "name": "Coconut", "quantity": 2 },
+      { "name": "Syrup", "quantity": 1 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Samosa",
+    "level": 103,
+    "max_price": 223.2,
+    "time": 75,
+    "xp": 27,
+    "needs": [
+      { "name": "Chickpea", "quantity": 2 },
+      { "name": "Wheat", "quantity": 4 },
+      { "name": "Chili Pepper", "quantity": 1 },
+      { "name": "Potato", "quantity": 3 }
+    ],
+    "source": "Deep Fryer",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Plain yogurt",
+    "level": 103,
+    "max_price": 234.0,
+    "time": 120,
+    "xp": 28,
+    "needs": [
+      { "name": "Milk", "quantity": 3 },
+      { "name": "Cream", "quantity": 2 }
+    ],
+    "source": "Yogurt Maker",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Guava",
+    "level": 104,
+    "max_price": 111.6,
+    "time": 2040,
+    "xp": 22,
+    "needs": [],
+    "source": "Guava Tree",
+    "per_boat_crate": "3-4"
+  },
+  {
+    "name": "Mushroom soup",
+    "level": 104,
+    "max_price": 176.4,
+    "time": 80,
+    "xp": 21,
+    "needs": [
+      { "name": "Mushroom", "quantity": 3 },
+      { "name": "Milk", "quantity": 1 },
+      { "name": "Onion", "quantity": 2 }
+    ],
+    "source": "Soup Kitchen",
+    "per_boat_crate": "2-4"
+  },
+  {
+    "name": "Chili fudge",
+    "level": 104,
+    "max_price": 540.0,
+    "time": 170,
+    "xp": 64,
+    "needs": [
+      { "name": "Butter", "quantity": 2 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Chili pepper", "quantity": 3 }
+    ],
+    "source": "Fudge Shop",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Tropical smoothie",
+    "level": 104,
+    "max_price": 475.2,
+    "time": 40,
+    "xp": 57,
+    "needs": [
+      { "name": "Coconut", "quantity": 1 },
+      { "name": "Banana", "quantity": 1 },
+      { "name": "Passion fruit", "quantity": 2 },
+      { "name": "Mango", "quantity": 2 }
+    ],
+    "source": "Smoothie Mixer",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Guava juice",
+    "level": 104,
+    "max_price": 252.0,
+    "time": 55,
+    "xp": 30,
+    "needs": [{ "name": "Guava", "quantity": 2 }],
+    "source": "Juice Press",
+    "per_boat_crate": "2-3"
+  },
+  {
+    "name": "Guava compote",
+    "level": 104,
+    "max_price": 421.2,
+    "time": 260,
+    "xp": 50,
+    "needs": [
+      { "name": "Guava", "quantity": 2 },
+      { "name": "Lemon", "quantity": 1 },
+      { "name": "White sugar", "quantity": 1 }
+    ],
+    "source": "Preservation Station",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Strawberry yogurt",
+    "level": 105,
+    "max_price": 529.2,
+    "time": 40,
+    "xp": 63,
+    "needs": [
+      { "name": "Plain yogurt", "quantity": 1 },
+      { "name": "Strawberry jam", "quantity": 1 }
+    ],
+    "source": "Yogurt Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Veggie bouquet",
+    "level": 106,
+    "max_price": 352.8,
+    "time": 15,
+    "xp": 42,
+    "needs": [
+      { "name": "Broccoli", "quantity": 3 },
+      { "name": "Tomato", "quantity": 3 },
+      { "name": "Mushroom", "quantity": 3 },
+      { "name": "Cotton fabric", "quantity": 1 }
+    ],
+    "source": "Flower Shop",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Chickpea stew",
+    "level": 106,
+    "max_price": 284.4,
+    "time": 90,
+    "xp": 34,
+    "needs": [
+      { "name": "Coconut", "quantity": 1 },
+      { "name": "Tomato", "quantity": 2 },
+      { "name": "Chickpea", "quantity": 3 }
+    ],
+    "source": "Stew Pot",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Fruit sorbet",
+    "level": 106,
+    "max_price": 518.4,
+    "time": 60,
+    "xp": 62,
+    "needs": [
+      { "name": "Guava", "quantity": 1 },
+      { "name": "Passion fruit", "quantity": 1 },
+      { "name": "Mango", "quantity": 2 },
+      { "name": "White sugar", "quantity": 3 }
+    ],
+    "source": "Ice Cream Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Pomegranate",
+    "level": 107,
+    "max_price": 111.6,
+    "time": 1620,
+    "xp": 22,
+    "needs": [],
+    "source": "pomogranate tree ",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Pomegranate tea",
+    "level": 107,
+    "max_price": 313.2,
+    "time": 34,
+    "xp": 37,
+    "needs": [
+      { "name": "Pomegranate", "quantity": 1 },
+      { "name": "Tea leaf", "quantity": 4 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Lemon fudge",
+    "level": 108,
+    "max_price": 590.4,
+    "time": 110,
+    "xp": 70,
+    "needs": [
+      { "name": "Butter", "quantity": 2 },
+      { "name": "Lemon", "quantity": 2 },
+      { "name": "White sugar", "quantity": 2 },
+      { "name": "Milk", "quantity": 3 }
+    ],
+    "source": "Fudge Shop",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Pomegranate cake",
+    "level": 108,
+    "max_price": 316.8,
+    "time": 160,
+    "xp": 38,
+    "needs": [
+      { "name": "Pomegranate", "quantity": 1 },
+      { "name": "Egg", "quantity": 2 },
+      { "name": "Cream", "quantity": 2 },
+      { "name": "Wheat", "quantity": 6 }
+    ],
+    "source": "Cake Oven",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Hummus wrap",
+    "level": 109,
+    "max_price": 374.4,
+    "time": 30,
+    "xp": 45,
+    "needs": [
+      { "name": "Bread", "quantity": 2 },
+      { "name": "Lettuce", "quantity": 1 },
+      { "name": "Hummus", "quantity": 1 }
+    ],
+    "source": "Sandwich Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Tropical yogurt",
+    "level": 109,
+    "max_price": 457.2,
+    "time": 60,
+    "xp": 54,
+    "needs": [
+      { "name": "Plain yogurt", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 4 },
+      { "name": "Passion fruit", "quantity": 1 },
+      { "name": "Mango", "quantity": 2 }
+    ],
+    "source": "Yogurt Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Chili stew",
+    "level": 109,
+    "max_price": 370.8,
+    "time": 120,
+    "xp": 44,
+    "needs": [
+      { "name": "Chili Pepper", "quantity": 3 },
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 }
+    ],
+    "source": "Stew Pot",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Plain cupcake",
+    "level": 109,
+    "max_price": 280.8,
+    "time": 40,
+    "xp": 34,
+    "needs": [
+      { "name": "Milk", "quantity": 2 },
+      { "name": "White sugar", "quantity": 3 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Wheat", "quantity": 5 }
+    ],
+    "source": "Cupcake Maker",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Guava cupcake",
+    "level": 109,
+    "max_price": 583.2,
+    "time": 70,
+    "xp": 70,
+    "needs": [
+      { "name": "Plain cupcake", "quantity": 1 },
+      { "name": "Guava", "quantity": 2 },
+      { "name": "Cream", "quantity": 1 }
+    ],
+    "source": "Cupcake Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Rice ball",
+    "level": 110,
+    "max_price": 464.4,
+    "time": 45,
+    "xp": 55,
+    "needs": [
+      { "name": "Rice", "quantity": 20 },
+      { "name": "Sesame", "quantity": 1 },
+      { "name": "Plum", "quantity": 1 }
+    ],
+    "source": "Sushi Bar",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Peanut fudge",
+    "level": 111,
+    "max_price": 1141.2,
+    "time": 90,
+    "xp": 136,
+    "needs": [
+      { "name": "Butter", "quantity": 2 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "White sugar", "quantity": 1 },
+      { "name": "Peanuts", "quantity": 2 }
+    ],
+    "source": "Fudge Shop",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Tropical cupcake",
+    "level": 112,
+    "max_price": 572.4,
+    "time": 90,
+    "xp": 68,
+    "needs": [
+      { "name": "Plain cupcake", "quantity": 1 },
+      { "name": "Pineapple", "quantity": 3 },
+      { "name": "Coconut", "quantity": 2 }
+    ],
+    "source": "Cupcake Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Winter stew",
+    "level": 112,
+    "max_price": 295.2,
+    "time": 140,
+    "xp": 7,
+    "needs": [
+      { "name": "Bacon", "quantity": 1 },
+      { "name": "Potato", "quantity": 3 },
+      { "name": "Onion", "quantity": 2 },
+      { "name": "Mushroom", "quantity": 2 }
+    ],
+    "source": "Stew Pot",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Cookie cupcake",
+    "level": 114,
+    "max_price": 712.8,
+    "time": 120,
+    "xp": 85,
+    "needs": [
+      { "name": "Plain cupcake", "quantity": 1 },
+      { "name": "Cream", "quantity": 2 },
+      { "name": "Cookie", "quantity": 2 },
+      { "name": "Cacao", "quantity": 1 }
+    ],
+    "source": "Cupcake Maker",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Plain waffles",
+    "level": 114,
+    "max_price": 198.0,
+    "time": 25,
+    "xp": 24,
+    "needs": [
+      { "name": "White sugar", "quantity": 2 },
+      { "name": "Egg", "quantity": 3 },
+      { "name": "Wheat", "quantity": 5 }
+    ],
+    "source": "Waffle Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Berry waffles",
+    "level": 114,
+    "max_price": 604.8,
+    "time": 35,
+    "xp": 72,
+    "needs": [
+      { "name": "Plain waffles", "quantity": 1 },
+      { "name": "Syrup", "quantity": 1 },
+      { "name": "Raspberry", "quantity": 3 },
+      { "name": "Blackberry", "quantity": 2 }
+    ],
+    "source": "Waffle Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Orange salad",
+    "level": 117,
+    "max_price": 558.0,
+    "time": 45,
+    "xp": 66,
+    "needs": [
+      { "name": "Cheese", "quantity": 1 },
+      { "name": "Lettuce", "quantity": 3 },
+      { "name": "Pomegranate", "quantity": 1 },
+      { "name": "Orange", "quantity": 2 }
+    ],
+    "source": "Salad Bar",
+    "per_boat_crate": "2"
+  },
+  {
+    "name": "Chocolate waffles",
+    "level": 117,
+    "max_price": 637.2,
+    "time": 40,
+    "xp": 76,
+    "needs": [
+      { "name": "Plain waffles", "quantity": 1 },
+      { "name": "Cacao", "quantity": 2 },
+      { "name": "Strawberry", "quantity": 3 },
+      { "name": "Banana", "quantity": 1 }
+    ],
+    "source": "Waffle Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Breakfast waffles",
+    "level": 119,
+    "max_price": 424.8,
+    "time": 45,
+    "xp": 51,
+    "needs": [
+      { "name": "Plain waffles", "quantity": 1 },
+      { "name": "Bacon", "quantity": 2 },
+      { "name": "Egg", "quantity": 1 },
+      { "name": "Asparagus", "quantity": 2 }
+    ],
+    "source": "Waffle Maker",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Oats",
+    "level": 119,
+    "max_price": 7.2,
+    "time": 7,
+    "xp": 1,
+    "needs": [{ "name": "Oats", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": "76-??"
+  },
+  {
+    "name": "Breakfast bowl",
+    "level": 119,
+    "max_price": 604.8,
+    "time": 50,
+    "xp": 54,
+    "needs": [
+      { "name": "Plain yogurt", "quantity": 1 },
+      { "name": "Oats", "quantity": 4 },
+      { "name": "Honey", "quantity": 1 },
+      { "name": "Blackberry", "quantity": 2 }
+    ],
+    "source": "Yogurt Maker",
+    "per_boat_crate": "?"
+  },
+  {
+    "name": "Apple porridge",
+    "level": 119,
+    "max_price": 522.0,
+    "time": 20,
+    "xp": 62,
+    "needs": [
+      { "name": "Apple", "quantity": 1 },
+      { "name": "Apple jam", "quantity": 2 },
+      { "name": "Oats", "quantity": 4 }
+    ],
+    "source": "Porridge Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Pineapple coconut bars",
+    "level": 120,
+    "max_price": 284.4,
+    "time": 40,
+    "xp": 34,
+    "needs": [
+      { "name": "Coconut", "quantity": 1 },
+      { "name": "White sugar", "quantity": 2 },
+      { "name": "Oats", "quantity": 3 },
+      { "name": "Pineapple", "quantity": 2 }
+    ],
+    "source": "Bakery",
+    "per_boat_crate": "?"
+  },
+  {
+    "name": "Sweet porridge",
+    "level": 120,
+    "max_price": 460.8,
+    "time": 45,
+    "xp": 55,
+    "needs": [
+      { "name": "Peach", "quantity": 1 },
+      { "name": "Honey", "quantity": 2 },
+      { "name": "Oats", "quantity": 3 }
+    ],
+    "source": "Porridge Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Rich soap",
+    "level": 121,
+    "max_price": 266.4,
+    "time": 70,
+    "xp": 32,
+    "needs": [
+      { "name": "Oats", "quantity": 2 },
+      { "name": "Pomegranate", "quantity": 1 },
+      { "name": "Coconut", "quantity": 1 }
+    ],
+    "source": "Bath Kiosk",
+    "per_boat_crate": "1-2"
+  },
+  {
+    "name": "Fresh porridge",
+    "level": 122,
+    "max_price": 435.6,
+    "time": 35,
+    "xp": 52,
+    "needs": [
+      { "name": "Pomegranate", "quantity": 1 },
+      { "name": "Mint", "quantity": 2 },
+      { "name": "Coconut", "quantity": 2 },
+      { "name": "Oats", "quantity": 3 }
+    ],
+    "source": "Porridge Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Vanilla milkshake",
+    "level": 124,
+    "max_price": 673.2,
+    "time": 45,
+    "xp": 80,
+    "needs": [
+      { "name": "Vanilla ice cream", "quantity": 1 },
+      { "name": "Cookie", "quantity": 2 },
+      { "name": "Toffee", "quantity": 1 },
+      { "name": "Syrup", "quantity": 1 }
+    ],
+    "source": "Milkshake Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Mocha milkshake",
+    "level": 125,
+    "max_price": 856.8,
+    "time": 30,
+    "xp": 125,
+    "needs": [
+      { "name": "Chocolate ice cream", "quantity": 1 },
+      { "name": "Espresso", "quantity": 2 }
+    ],
+    "source": "Milkshake Bar",
+    "per_boat_crate": "1"
+  },
+  {
+    "name": "Fruity milkshake",
+    "level": 126,
+    "max_price": 759.6,
+    "time": 35,
+    "xp": 90,
+    "needs": [
+      { "name": "Peach ice cream", "quantity": 1 },
+      { "name": "Orange", "quantity": 2 },
+      { "name": "Lemon", "quantity": 1 }
+    ],
+    "source": "Milkshake Bar",
+    "per_boat_crate": "1"
+  }
+]
