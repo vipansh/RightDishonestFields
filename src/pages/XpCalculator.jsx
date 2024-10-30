@@ -15,7 +15,7 @@ const EARLY_LEVEL_XP = {
   49: 148400, 50: 157000
 };
 
-const Calculator = () => {
+const XpCalculator = () => {
   const [formData, setFormData] = useState({
     initialLevel: '',
     finalLevel: '',
@@ -143,4 +143,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default XpCalculator;
