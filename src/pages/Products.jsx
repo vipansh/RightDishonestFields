@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import {
@@ -291,7 +292,14 @@ const ProductsTable = () => {
                 ) : (
                   displayProducts.map((product, index) => (
                     <TableRow key={index}>
-                      <TableCell className="font-medium">{product.name}</TableCell>
+                      <TableCell className="font-medium">
+                        <Link
+                          to={`/products/${product.name.toLowerCase()}`}
+                          className="text-blue-500 hover:underline"
+                        >
+                          {product.name}
+                        </Link>
+                      </TableCell>
                       <TableCell>{product.level}</TableCell>
                       <TableCell>{product.max_price}</TableCell>
                       <TableCell>{formatTime(product.time)}</TableCell>
