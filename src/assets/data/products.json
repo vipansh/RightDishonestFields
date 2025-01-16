@@ -3112,7 +3112,7 @@
     "time": 20,
     "xp": 19,
     "needs": [{ "name": "ginger", "quantity": 5 }],
-    "source": "essential oils lab",
+    "source": "Essential Oils Lab",
     "per_boat_crate": "1-3"
   },
   {
@@ -4230,7 +4230,7 @@
       { "name": "Platinum bar", "quantity": 1 },
       { "name": "Gold bar", "quantity": 1 }
     ],
-    "source":"jeweler",
+    "source": "Jeweler",
     "per_boat_crate": 0
   },
   {
@@ -4657,7 +4657,7 @@
     "time": 1620,
     "xp": 22,
     "needs": [],
-    "source": "pomogranate tree ",
+    "source": "Pomogranate Tree",
     "per_boat_crate": 0
   },
   {
@@ -5061,5 +5061,91 @@
     ],
     "source": "Milkshake Bar",
     "per_boat_crate": "1"
+  },
+  {
+    "name": "Chamomile",
+    "level": 45,
+    "max_price": 108,
+    "time": 20,
+    "xp": 2,
+    "needs": [{ "name": "Chamomile", "quantity": 1 }],
+    "source": "Field",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Chamomile essential Oil",
+    "level": 74,
+    "max_price": 72.0,
+    "time": 10,
+    "xp": 8,
+    "needs": [{ "name": "Chamomile", "quantity": 5 }],
+    "source": "Essential Oils Lab",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Chamomile Tea",
+    "level": 100,
+    "max_price": 144.0,
+    "time": 20,
+    "xp": 17,
+    "needs": [
+      { "name": "Chamomile", "quantity": 5 },
+      { "name": "Honeycomb", "quantity": 1 }
+    ],
+    "source": "Tea Stand",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Soothing Pad",
+    "level": 45,
+    "max_price": 324.0,
+    "time": 60,
+    "xp": 39,
+    "needs": [
+      { "name": "Chamomile", "quantity": 5 },
+      { "name": "Cotton Fabric", "quantity": 2 },
+      { "name": "Wheat", "quantity": 5 }
+    ],
+    "source": "Sewing Machine",
+    "per_boat_crate": 0
+  },
+  {
+    "name": "Fresh Diffuser",
+    "level": 110,
+    "max_price": 349.0,
+    "time": 20,
+    "xp": 16,
+    "needs": [
+      { "name": "Ginger Essential Oil", "quantity": 1 },
+      { "name": "Mint Essential Oil", "quantity": 1 }
+    ],
+    "source": "Perfumerie",
+    "per_boat_crate": "1-4"
+  },
+  {
+    "name": "Calming Diffuser",
+    "level": 116,
+    "max_price": 169.0,
+    "time": 25,
+    "xp": 55,
+    "needs": [
+      { "name": "Chamomile Essential Oil", "quantity": 1 },
+      { "name": "Indigo", "quantity": 3 }
+    ],
+    "source": "Perfumerie",
+    "per_boat_crate": "1-4"
+  },
+  {
+    "name": "Zesty Perfume",
+    "level": 113,
+    "max_price": 388.0,
+    "time": 15,
+    "xp": 27,
+    "needs": [
+      { "name": "Lemon Essential Oil", "quantity": 1 },
+      { "name": "Ginger", "quantity": 3 }
+    ],
+    "source": "Perfumerie",
+    "per_boat_crate": "1-4"
   }
 ]
