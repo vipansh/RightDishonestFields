@@ -11,7 +11,7 @@ import { DiscordLogoIcon } from "@radix-ui/react-icons";
 import { MessageSquarePlus, Star } from "lucide-react";
 
 const Home = () => {
-  const discordInviteLink = "https://discord.gg/x8Ngu6ZdFj";
+  const discordInviteLink = "https://discord.gg/Maq5a9CGyB";
   const feedbackFormLink = "https://forms.gle/WS5hPYnPyhv1MRE88";
 
   const handleJoinDiscord = () => {
