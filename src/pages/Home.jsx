@@ -9,6 +9,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { DiscordLogoIcon } from "@radix-ui/react-icons";
 import { MessageSquarePlus, Star } from "lucide-react";
+import {
+  HeroOne,
+  HeroTwo,
+  Features,
+  Characters,
+  Gameplay,
+  Community,
+} from "../components/homePage";
 
 const Home = () => {
   const discordInviteLink = "https://discord.gg/Maq5a9CGyB";
@@ -21,6 +29,19 @@ const Home = () => {
   const handleOpenFeedback = () => {
     window.open(feedbackFormLink, "_blank");
   };
+
+  return (
+    <div className="antialiased text-gray-800 min-h-screen flex flex-col">
+      <main id="main-content" className="flex-1 relative h-full">
+        <HeroOne />
+        <HeroTwo />
+        <Features />
+        <Characters />
+        <Gameplay />
+        <Community />
+      </main>
+    </div>
+  );
 
   return (
     <section className="min-h-[calc(100vh-8rem)] flex items-center justify-center p-4">

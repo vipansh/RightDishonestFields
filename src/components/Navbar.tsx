@@ -1,150 +1,335 @@
-import React from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+  HamburgerMenuIcon,
+  ChevronDownIcon,
+  SunIcon,
+  MoonIcon,
+} from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import { DiscordLogoIcon } from "@radix-ui/react-icons";
-import { MessageSquarePlus, Star } from "lucide-react";
 import {
-  HeroOne,
-  HeroTwo,
-  Features,
-  Characters,
-  Gameplay,
-  Community,
-} from "../components/homePage";
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 
-const Home = () => {
-  const discordInviteLink = "https://discord.gg/Maq5a9CGyB";
-  const feedbackFormLink = "https://forms.gle/WS5hPYnPyhv1MRE88";
+type Theme = "dark" | "light" | "system";
+type NavItem = {
+  name: string;
+  to?: string;
+  subItems?: Array<{ name: string; to: string }>;
+};
 
-  const handleJoinDiscord = () => {
-    window.open(discordInviteLink, "_blank");
-  };
+const ThemeContext = createContext<{
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
+}>({
+  theme: "system",
+  setTheme: () => null,
+});
 
-  const handleOpenFeedback = () => {
-    window.open(feedbackFormLink, "_blank");
-  };
+const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) throw new Error("useTheme must be used within ThemeProvider");
+  return context;
+};
+
+const NAV_ITEMS: NavItem[] = [
+  { name: "Home", to: "/" },
+  { name: "Products", to: "/products" },
+  {
+    name: "Calculators",
+    subItems: [
+      { name: "Barn Size Calculator", to: "/barnsizecalculator" },
+      { name: "XP Calculator", to: "/xpcalculator" },
+    ],
+  },
+];
+
+const ModeToggle = () => {
+  const { theme, setTheme } = useTheme();
 
   return (
-    <div className="antialiased text-gray-800 min-h-screen flex flex-col">
-      <main id="main-content" className="flex-1 relative h-full">
-        <HeroOne />
-        <HeroTwo />
-        <Features />
-        <Characters />
-        <Gameplay />
-        <Community />
-      </main>
-    </div>
-  );
-
-  return (
-    <section className="min-h-[calc(100vh-8rem)] flex items-center justify-center p-4">
-      <Card className="w-full max-w-lg">
-        <CardContent className="p-8">
-          <div className="text-center space-y-8">
-            <div className="relative w-32 h-32 mx-auto">
-              <div className="absolute inset-0 animate-float">
-                <img
-                  src="https://res.cloudinary.com/diaxg9ypf/image/upload/v1735801791/drhayday_aaarxr.png"
-                  alt="Dr Hayday Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="absolute -right-4 -top-4 animate-pulse-slow">
-                <span role="img" aria-label="sparkles" className="text-4xl">
-                  ✨
-                </span>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <CardTitle className="text-4xl">Welcome to Dr Hayday</CardTitle>
-              <CardDescription className="text-base max-w-md mx-auto">
-                Join our vibrant Discord community! Connect with fellow players,
-                share strategies, and stay updated with the latest news.
-              </CardDescription>
-            </div>
-
-            <div className="flex justify-center">
-              <Button
-                onClick={handleJoinDiscord}
-                className="flex items-center gap-2 text-lg px-8 py-6"
-                size="lg"
-              >
-                <DiscordLogoIcon className="w-6 h-6" />
-                Join Our Discord
-              </Button>
-            </div>
-
-            <div className="p-4 border rounded-lg">
-              <h3 className="text-sm font-medium mb-2">
-                Community Features 🌟
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Active discussions, helpful tips, trading, friendly community,
-                and regular giveaways await you in our Discord server!
-              </p>
-            </div>
-
-            <div className="border-t pt-6">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <Star className="w-5 h-5 text-primary" />
-                <h3 className="text-lg font-medium">Help Us Improve</h3>
-                <Star className="w-5 h-5 text-primary" />
-              </div>
-              <p className="text-sm text-muted-foreground mb-4">
-                Your feedback shapes Dr Hayday! Share your ideas and suggestions
-                to make our tools even better.
-              </p>
-
-              <div className="flex justify-center">
-                <Button
-                  onClick={handleOpenFeedback}
-                  variant="outline"
-                  className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <MessageSquarePlus className="w-4 h-4" />
-                  Share Your Feedback
-                </Button>
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-      <style jsx>{`
-        @keyframes float {
-          0%,
-          100% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(-12px);
-          }
-        }
-        @keyframes pulse-slow {
-          0%,
-          100% {
-            opacity: 1;
-          }
-          50% {
-            opacity: 0.6;
-          }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        .animate-pulse-slow {
-          animation: pulse-slow 2s ease-in-out infinite;
-        }
-      `}</style>
-    </section>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="outline" size="icon">
+          <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <span className="sr-only">Toggle theme</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {["light", "dark", "system"].map((t) => (
+          <DropdownMenuItem key={t} onClick={() => setTheme(t as Theme)}>
+            {t.charAt(0).toUpperCase() + t.slice(1)}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
-export default Home;
+const MobileNavItem: React.FC<{
+  item: NavItem;
+  isActive: (to: string) => boolean;
+  onSelect: () => void;
+}> = ({ item, isActive, onSelect }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  if (!item.subItems) {
+    return (
+      <Link
+        to={item.to!}
+        onClick={onSelect}
+        className={cn(
+          "block px-6 py-2.5 text-[15px] rounded-md transition-colors text-muted-foreground",
+          isActive(item.to!) && "text-foreground"
+        )}
+      >
+        {item.name}
+      </Link>
+    );
+  }
+
+  return (
+    <div className="w-full">
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        aria-expanded={isExpanded}
+        aria-controls={`${item.name}-submenu`}
+        className={cn(
+          "flex w-full items-center justify-between py-2.5 px-6 text-[15px] transition-colors rounded-md text-muted-foreground",
+          item.subItems.some((subItem) => isActive(subItem.to)) &&
+            "text-foreground"
+        )}
+      >
+        <span>{item.name}</span>
+        <ChevronDownIcon
+          className={cn(
+            "h-4 w-4 transition-transform duration-200",
+            isExpanded && "rotate-180"
+          )}
+        />
+      </button>
+      <div
+        id={`${item.name}-submenu`}
+        className={cn(
+          "overflow-hidden transition-all duration-200 pl-4",
+          isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        )}
+      >
+        {item.subItems.map((subItem) => (
+          <Link
+            key={subItem.name}
+            to={subItem.to}
+            onClick={onSelect}
+            className={cn(
+              "block px-6 py-2.5 text-[14px] rounded-md transition-colors text-muted-foreground",
+              isActive(subItem.to) && "text-foreground"
+            )}
+          >
+            {subItem.name}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const location = useLocation();
+
+  const [theme, setThemeState] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "system";
+    return (localStorage.getItem("themePreference") as Theme) || "system";
+  });
+
+  const updateTheme = (newTheme: Theme) => {
+    const root = window.document.documentElement;
+    const systemTheme = window.matchMedia?.("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    const activeTheme = newTheme === "system" ? systemTheme : newTheme;
+
+    root.classList.remove("light", "dark");
+    root.classList.add(activeTheme);
+    root.setAttribute("data-theme", activeTheme);
+
+    const metaThemeColor =
+      document.querySelector('meta[name="theme-color"]') ||
+      Object.assign(document.createElement("meta"), { name: "theme-color" });
+    metaThemeColor.content = activeTheme === "dark" ? "#000000" : "#ffffff";
+    if (!metaThemeColor.parentNode) document.head.appendChild(metaThemeColor);
+  };
+
+  useEffect(() => {
+    updateTheme(theme);
+    localStorage.setItem("themePreference", theme);
+
+    if (theme === "system") {
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      const handler = () => updateTheme("system");
+      mediaQuery.addEventListener("change", handler);
+      return () => mediaQuery.removeEventListener("change", handler);
+    }
+  }, [theme]);
+
+  const setTheme = (newTheme: Theme) => {
+    setThemeState(newTheme);
+  };
+
+  const isLinkActive = (to: string) => {
+    if (to === "/") return location.pathname === "/";
+    return location.pathname.startsWith(to);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!(e.target as Element).closest(".dropdown-container")) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-sm border-b transition-colors duration-300">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between h-14 px-6">
+            <Link to="/" className="flex items-center text-lg font-semibold">
+              <img
+                src="https://hayday.com/graphics/campaigns/chicken-logo.webp"
+                alt="Hay Day Logo"
+                className="w-8 h-8 mr-2 rounded-sm"
+              />
+              Dr Hayday
+            </Link>
+
+            <div className="hidden md:flex md:items-center flex-1 justify-end">
+              <div className="flex items-center space-x-4">
+                {NAV_ITEMS.map((item) =>
+                  item.subItems ? (
+                    <div
+                      key={item.name}
+                      className="relative dropdown-container"
+                    >
+                      <button
+                        onClick={() =>
+                          setActiveDropdown(
+                            activeDropdown === item.name ? null : item.name
+                          )
+                        }
+                        aria-expanded={activeDropdown === item.name}
+                        aria-controls={`${item.name}-dropdown`}
+                        className={cn(
+                          "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent inline-flex items-center gap-1 text-muted-foreground",
+                          (item.subItems.some((sub) => isLinkActive(sub.to)) ||
+                            activeDropdown === item.name) &&
+                            "text-foreground"
+                        )}
+                      >
+                        {item.name}
+                        <ChevronDownIcon
+                          className={cn(
+                            "h-4 w-4 transition-transform duration-200",
+                            activeDropdown === item.name && "rotate-180"
+                          )}
+                        />
+                      </button>
+                      {activeDropdown === item.name && (
+                        <div
+                          id={`${item.name}-dropdown`}
+                          className="absolute left-0 top-full w-48 pt-2"
+                        >
+                          <div className="bg-popover rounded-md shadow-md border p-2">
+                            {item.subItems.map((subItem) => (
+                              <Link
+                                key={subItem.name}
+                                to={subItem.to}
+                                onClick={() => setActiveDropdown(null)}
+                                className={cn(
+                                  "block w-full rounded-md px-2 py-2 text-sm transition-colors hover:bg-accent hover:text-accent-foreground text-muted-foreground",
+                                  isLinkActive(subItem.to) && "text-foreground"
+                                )}
+                              >
+                                {subItem.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      to={item.to!}
+                      className={cn(
+                        "px-3 py-2 text-sm rounded-md transition-colors hover:bg-accent text-muted-foreground",
+                        isLinkActive(item.to!) && "text-foreground"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                )}
+                <div className="pl-4">
+                  <ModeToggle />
+                </div>
+              </div>
+            </div>
+
+            <div className="flex md:hidden items-center space-x-2">
+              <ModeToggle />
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    aria-label="Open navigation menu"
+                  >
+                    <HamburgerMenuIcon className="h-6 w-6 text-muted-foreground" />
+                    <span className="sr-only">Menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent
+                  side="right"
+                  className="w-[300px] sm:w-[400px] p-0"
+                >
+                  <SheetHeader className="px-6 py-4 border-b">
+                    <SheetTitle>Navigation</SheetTitle>
+                  </SheetHeader>
+                  <div className="flex-1 overflow-auto py-4">
+                    {NAV_ITEMS.map((item) => (
+                      <MobileNavItem
+                        key={item.name}
+                        item={item}
+                        isActive={isLinkActive}
+                        onSelect={() => setIsOpen(false)}
+                      />
+                    ))}
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </ThemeContext.Provider>
+  );
+};
+
+export default Navbar;
